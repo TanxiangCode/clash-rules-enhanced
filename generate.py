@@ -69,7 +69,18 @@ def write_to_ruleset(filename, r_list):
     os.makedirs("ruleset", exist_ok=True)
     file_path = os.path.join("ruleset", f"{filename}.yaml")
     
-    unique_items = sorted(list(set([str(i).strip("'\" ") for i in r_list if i])))
+    cleaned_items = []
+    for item in r_list:
+        item = str(item).strip("'\" ")
+        # 🛡️ 核心修复：如果洗出来的规则核心值是空、或者是关键字 payload，强行剔除！
+        if not item or item.startswith("#") or item.lower().startswith("payload"):
+            continue
+        if item.startswith("- "):
+            item = item[2:]
+        cleaned_items.append(item.strip("'\" "))
+        
+    # 彻底清洗去重并排序
+    unique_items = sorted(list(set(cleaned_items)))
     
     with open(file_path, "w", encoding="utf-8") as f:
         f.write("# ===================================================\n")
