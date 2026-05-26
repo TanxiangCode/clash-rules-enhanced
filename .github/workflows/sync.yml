@@ -1,0 +1,39 @@
+name: 强力规则定时合并重组流
+
+on:
+  schedule:
+    # 每天北京时间凌晨 04:00 (UTC 20:00) 自动触发
+    - cron: '0 20 * * *'
+  workflow_dispatch: # 支持你随时在 GitHub 网页上手动点击按钮触发
+
+jobs:
+  merge_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 准备 Python 环境
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: 安装脚本依赖组件
+      run: |
+        pip install requests pyyaml
+
+    - name: 执行清洗与打包
+      run: |
+        python generate.py
+
+    - name: 将全新大包同步回仓库
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Actions-Bot"
+        git add ruleset/*.yaml
+        if ! git diff --cached --quiet; then
+          git commit -m "自动同步：全矩阵源规则合并成功"
+          git push
+        else
+          echo "规则无内容变化，跳过本次推送。"
+        fi
