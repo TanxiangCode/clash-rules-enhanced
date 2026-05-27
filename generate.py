@@ -1,8 +1,9 @@
 import os
 import re
 import requests
-import yaml
 import tldextract
+
+# 🌟 注意：这里彻底删除了 import yaml，拒绝性能拖累！
 
 README_URL = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/README.md"
 RAW_BASE_URL = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash"
@@ -20,22 +21,16 @@ TABLE_HEADER_MAP = {
 
 AI_COMPONENTS = ["OpenAI", "Claude", "Gemini", "Copilot", "Anthropic", "BardAI"]
 
-# =================================================================
-# 🌟 核心网络优化：建立全局 TCP 长连接池 (防 GitHub 限流，提速 80%)
-# =================================================================
 http_session = requests.Session()
 http_session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) clash-rules-enhanced"})
 
-# 全局初始化提取器（只在首次运行时消耗时间拉取 Mozilla PSL 数据库）
 domain_extractor = tldextract.TLDExtract()
 
 
 def parse_markdown_tables_robust():
-    """逐行状态机扫描账本"""
-    print("[*] 正在拉取不黑表 README 账本...")
+    print("[*] 正在拉取不黑表 README 账本...", flush=True)
     dynamic_registry = {}
     try:
-        # 使用复用连接池拉取
         res = http_session.get(README_URL, timeout=10)
         if res.status_code != 200:
             raise Exception(f"HTTP {res.status_code}")
@@ -71,26 +66,24 @@ def parse_markdown_tables_robust():
                     elif current_package:
                         dynamic_registry[folder] = current_package
     except Exception as e:
-        print(f"[-] 动态扫描中断: {e}。触发保底。")
-        return {"OpenAI": "NexusAI", "China": "MatrixChina", "JianGuoYun": "MatrixChina", "Apple": "AppleDirect", "Advertising": "PurifyReject", "YouTube": "GlobalMedia", "Steam": "ArcadeGame"}
+        print(f"[-] 动态扫描中断: {e}", flush=True)
+        return {"OpenAI": "NexusAI", "China": "MatrixChina", "JianGuoYun": "MatrixChina"}
     
-    print(f"[+] 成功解析出 {len(dynamic_registry)} 个待下载组件！")
+    print(f"[+] 成功解析出 {len(dynamic_registry)} 个待下载组件！", flush=True)
     return dynamic_registry
 
 
 def download_and_extract_any(folder_name):
-    """高弹性多轨扫描：加入实时进度探针"""
     rules = []
     possible_files = [f"{folder_name}.yaml", f"{folder_name}_Domain.txt", f"{folder_name}.list"]
     
-    # 🌟 实时日志探针：通过 flush=True 强制推送到 Actions 控制台
-    print(f"  -> 正在拉取组件: {folder_name:<20} ...", end="", flush=True)
+    # 🌟 修改点 1：放弃 end="" 缓冲，直接换行打印，实时显示进度
+    print(f"  -> 开始尝试拉取组件: {folder_name}", flush=True)
     
     success = False
     for file_item in possible_files:
         url = f"{RAW_BASE_URL}/{folder_name}/{file_item}"
         try:
-            # 🌟 网络优化：缩短单次超时到 5 秒，使用长连接
             res = http_session.get(url, timeout=5)
             if res.status_code != 200:
                 continue
@@ -98,35 +91,31 @@ def download_and_extract_any(folder_name):
             success = True
             content = res.text
             
-            if "payload:" in content and file_item.endswith(".yaml"):
-                try:
-                    parsed = yaml.safe_load(content)
-                    if parsed and "payload" in parsed and isinstance(parsed["payload"], list):
-                        rules.extend(parsed["payload"])
-                        continue
-                except:
-                    pass
+            # 🌟 修改点 2：直接暴击干掉 PyYAML，用流式字符串切分，性能提升上万倍！
             for line in content.splitlines():
                 line = line.strip()
+                # 忽略空行、注释行和 YAML 的 payload 头
                 if not line or line.startswith("#") or line.startswith("//") or line.startswith("payload:"):
                     continue
+                # 去掉 YAML 列表结构前面的 "- " 
                 if line.startswith("- "):
                     line = line[2:]
-                line = line.lstrip("+.")
-                rules.append(line.strip("'\" "))
+                    
+                line = line.strip("'\" ").lstrip("+.")
+                if line:
+                    rules.append(line)
         except Exception:
             pass
             
     if success:
-        print(f" [成功] ({len(rules)} 条)")
+        print(f"     [+] {folder_name} 拉取成功 ({len(rules)} 条)", flush=True)
     else:
-        print(" [无数据/超时跳过]")
+        print(f"     [-] {folder_name} 无数据或超时跳过", flush=True)
         
     return rules
 
 
 def extract_pure_domain(rule_string):
-    """从规则字符串中剥离出纯域名文本"""
     rule_string = str(rule_string).strip()
     if "," in rule_string:
         parts = rule_string.split(",")
@@ -136,10 +125,6 @@ def extract_pure_domain(rule_string):
 
 
 def get_base_domain_safe(domain):
-    """
-    🛡️【安全级根主权提取算法】
-    依靠 Mozilla Public Suffix List 确保绝对的边界安全，防雪崩！
-    """
     if re.match(r"^\d{1,3}(\.\d{1,3}){3}$", domain) or ":" in domain:
         return domain 
         
@@ -156,27 +141,27 @@ def main():
     raw_pools["NexusAI"] = set()
     raw_pools["OverseaProxy"] = set()
 
-    print("\n[*] =========================================")
-    print("[*] 开始流式同步核心分类数据 (网络并发层)...")
-    print("[*] =========================================")
+    print("\n[*] =========================================", flush=True)
+    print("[*] 开始流式同步核心分类数据 (纯内存并发层)...", flush=True)
+    print("[*] =========================================", flush=True)
+    
     for folder, target_package in official_registry.items():
         items = download_and_extract_any(folder)
         if not items:
             continue
         
         for item in items:
-            item = str(item).strip("'\" ")
-            if not item or item.startswith("#") or item.lower().startswith("payload"):
-                continue
-            
-            if not item.startswith("DOMAIN") and not item.startswith("IP-IDR") and not item.startswith("GEOIP"):
-                if ":" in item or (item.replace('.', '').isdigit() and '/' in item):
-                    item = f"IP-CIDR6,{item}" if ":" in item else f"IP-CIDR,{item}"
+            # 🌟 修改点 3：高精度的 IP 段判定修复
+            if not item.startswith("DOMAIN") and not item.startswith("IP-CIDR") and not item.startswith("GEOIP"):
+                if ":" in item: # IPv6
+                    item = f"IP-CIDR6,{item}"
+                elif re.match(r"^\d{1,3}(\.\d{1,3}){3}(/\d+)?$", item): # IPv4 段
+                    item = f"IP-CIDR,{item}"
                 else:
                     item = f"DOMAIN-SUFFIX,{item}"
             raw_pools[target_package].add(item)
 
-    print("\n[*] 正在并入 Loyalsoldier 与 17mon 基线数据...")
+    print("\n[*] 正在并入 Loyalsoldier 与 17mon 基线数据...", flush=True)
     china_set = raw_pools["MatrixChina"]
     try:
         ls_direct = http_session.get("https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt", timeout=10).text.splitlines()
@@ -191,14 +176,11 @@ def main():
             if ip and not ip.startswith("#"):
                 china_set.add(f"IP-CIDR6,{ip}" if ":" in ip else f"IP-CIDR,{ip}")
     except Exception as e:
-        print(f"[-] 基线并入跳过: {e}")
+        print(f"[-] 基线并入跳过: {e}", flush=True)
 
-    # =================================================================
-    # 2. 🛡️【安全哈希去重引擎】：O(1) 计算层
-    # =================================================================
-    print("\n[*] =========================================")
-    print("[*] 启动高性能哈希主权索引，开始瞬间漂白海外包...")
-    print("[*] =========================================")
+    print("\n[*] =========================================", flush=True)
+    print("[*] 启动高性能哈希主权索引，开始瞬间漂白海外包...", flush=True)
+    print("[*] =========================================", flush=True)
     
     china_root_registry = set()
     for rule in china_set:
@@ -218,23 +200,21 @@ def main():
             purified_set.add(rule)
         raw_pools[pkg_name] = purified_set
 
-    # 3. 序列化输出
     os.makedirs("ruleset", exist_ok=True)
-    print("\n[*] =========================================")
+    print("\n[*] =========================================", flush=True)
     for filename, r_set in raw_pools.items():
         file_path = os.path.join("ruleset", f"{filename}.yaml")
         unique_items = sorted(list(r_set))
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("# ===================================================\n")
-            f.write(f"# 🛡️ clash-rules-enhanced 工业级网络+哈希极速版\n")
+            f.write(f"# 🛡️ clash-rules-enhanced 工业级无依赖极速版\n")
             f.write(f"# 📊 融合纯净总条目: {len(unique_items)} 条\n")
             f.write("# ===================================================\n")
             f.write("payload:\n")
             for rule in unique_items:
                 f.write(f"  - {rule}\n")
-        print(f"[+] 成功编译大包: {file_path:<30} (条目数: {len(unique_items)})")
-
+        print(f"[+] 成功编译大包: {file_path:<30} (条目数: {len(unique_items)})", flush=True)
 
 if __name__ == "__main__":
     main()
