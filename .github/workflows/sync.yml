@@ -33,4 +33,8 @@ jobs:
           git config --local user.name "GitHub Action"
           git add ruleset/*.yaml
           git commit -m "Auto update clash rules with PSL purifier" || exit 0
+          
+          # 🌟 绝杀防冲突：在推送前，先以变基（Rebase）的方式拉取远程最新的代码
+          git pull --rebase origin main
+          
           git push
