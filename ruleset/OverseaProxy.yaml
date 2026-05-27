@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 工业级双轨安全极速版
-# 📊 融合纯净总条目: 7454 条
+# 📊 融合纯净总条目: 7455 条
 # ===================================================
 payload:
   - DOMAIN,api.waqi.info
@@ -4059,6 +4059,7 @@ payload:
   - DOMAIN-SUFFIX,movements.org
   - DOMAIN-SUFFIX,moves-export.com
   - DOMAIN-SUFFIX,moviefap.com
+  - DOMAIN-SUFFIX,mozilla.ai
   - DOMAIN-SUFFIX,mozilla.org
   - DOMAIN-SUFFIX,moztw.org
   - DOMAIN-SUFFIX,mp3buscador.com
