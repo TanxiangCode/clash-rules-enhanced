@@ -1,13 +1,12 @@
 # ===================================================
-# 🛡️ clash-rules-enhanced 语义层像素级去重版
-# 📊 融合纯净总条目: 48 条
+# 🛡️ clash-rules-enhanced 工业级安全极速清洗版
+# 📊 融合纯净总条目: 47 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,cdn.usefathom.com
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,makersuite.google.com
   - DOMAIN,openai-api.arkoselabs.com
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
