@@ -192,7 +192,8 @@ def main():
             base_dom = get_base_domain_safe(pure_dom)
             china_root_registry.add(base_dom)
 
-    for pkg_name in ["NexusAI", "GlobalMedia", "ArcadeGame", "OverseaProxy"]:
+    # 🌟 将广告拦截包也纳入清洗范围，赋予 MatrixChina 绝对防误杀豁免权
+    for pkg_name in ["PurifyReject", "NexusAI", "GlobalMedia", "ArcadeGame", "OverseaProxy"]:
         purified_set = set()
         for rule in raw_pools[pkg_name]:
             if "DOMAIN" in rule:
