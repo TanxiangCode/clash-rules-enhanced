@@ -1,6 +1,6 @@
 # ===================================================
-# 🛡️ clash-rules-enhanced 集合算法净化版
-# 📊 融合纯净总条目: 55 条
+# 🛡️ clash-rules-enhanced 语义层像素级去重版
+# 📊 融合纯净总条目: 48 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
@@ -11,7 +11,6 @@ payload:
   - DOMAIN,makersuite.google.com
   - DOMAIN,openai-api.arkoselabs.com
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,servd-anthropic-website.b-cdn.net
   - DOMAIN,static.cloudflareinsights.com
@@ -19,12 +18,6 @@ payload:
   - DOMAIN-KEYWORD,developerprofiles
   - DOMAIN-KEYWORD,generativelanguage
   - DOMAIN-KEYWORD,openai
-  - DOMAIN-SUFFIX,IP-ASN,20473
-  - DOMAIN-SUFFIX,IP-ASN,20473,no-resolve
-  - DOMAIN-SUFFIX,IP-CIDR,24.199.123.28/32
-  - DOMAIN-SUFFIX,IP-CIDR,24.199.123.28/32,no-resolve
-  - DOMAIN-SUFFIX,IP-CIDR,64.23.132.171/32
-  - DOMAIN-SUFFIX,IP-CIDR,64.23.132.171/32,no-resolve
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,algolia.net
   - DOMAIN-SUFFIX,anthropic.com
