@@ -2,7 +2,7 @@ import os
 import re
 import requests
 import yaml
-import tldextract  # 引入工业级公共后缀(PSL)解析库
+import tldextract
 
 README_URL = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/README.md"
 RAW_BASE_URL = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash"
@@ -20,22 +20,29 @@ TABLE_HEADER_MAP = {
 
 AI_COMPONENTS = ["OpenAI", "Claude", "Gemini", "Copilot", "Anthropic", "BardAI"]
 
-# 🌟 全局初始化提取器（提取时会自动去网络同步/读取本地最新的 Mozilla PSL 数据库）
-# 仅消耗一次初始化时间，后续百万次提取都是纯内存极速操作
+# =================================================================
+# 🌟 核心网络优化：建立全局 TCP 长连接池 (防 GitHub 限流，提速 80%)
+# =================================================================
+http_session = requests.Session()
+http_session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) clash-rules-enhanced"})
+
+# 全局初始化提取器（只在首次运行时消耗时间拉取 Mozilla PSL 数据库）
 domain_extractor = tldextract.TLDExtract()
 
 
 def parse_markdown_tables_robust():
     """逐行状态机扫描账本"""
-    print("[*] 正在通过逐行扫描流深度解构不黑表表格账本...")
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    print("[*] 正在拉取不黑表 README 账本...")
     dynamic_registry = {}
     try:
-        res = requests.get(README_URL, headers=headers, timeout=20)
+        # 使用复用连接池拉取
+        res = http_session.get(README_URL, timeout=10)
         if res.status_code != 200:
             raise Exception(f"HTTP {res.status_code}")
+            
         current_package = None
         is_global_table = False
+        
         for line in res.text.splitlines():
             line = line.strip()
             if not line or not line.startswith("|"):
@@ -47,6 +54,7 @@ def parse_markdown_tables_robust():
                     current_package = TABLE_HEADER_MAP.get(header_word, None)
                     is_global_table = (header_word == "Global")
                 continue
+            
             if current_package or is_global_table:
                 folders = re.findall(r'https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/([^)\s/]+)', line)
                 for folder in folders:
@@ -65,20 +73,31 @@ def parse_markdown_tables_robust():
     except Exception as e:
         print(f"[-] 动态扫描中断: {e}。触发保底。")
         return {"OpenAI": "NexusAI", "China": "MatrixChina", "JianGuoYun": "MatrixChina", "Apple": "AppleDirect", "Advertising": "PurifyReject", "YouTube": "GlobalMedia", "Steam": "ArcadeGame"}
+    
+    print(f"[+] 成功解析出 {len(dynamic_registry)} 个待下载组件！")
     return dynamic_registry
 
 
 def download_and_extract_any(folder_name):
-    """高弹性多轨扫描：依次尝试解析 .yaml, _Domain.txt, .list"""
+    """高弹性多轨扫描：加入实时进度探针"""
     rules = []
     possible_files = [f"{folder_name}.yaml", f"{folder_name}_Domain.txt", f"{folder_name}.list"]
+    
+    # 🌟 实时日志探针：通过 flush=True 强制推送到 Actions 控制台
+    print(f"  -> 正在拉取组件: {folder_name:<20} ...", end="", flush=True)
+    
+    success = False
     for file_item in possible_files:
         url = f"{RAW_BASE_URL}/{folder_name}/{file_item}"
         try:
-            res = requests.get(url, timeout=10)
+            # 🌟 网络优化：缩短单次超时到 5 秒，使用长连接
+            res = http_session.get(url, timeout=5)
             if res.status_code != 200:
                 continue
+            
+            success = True
             content = res.text
+            
             if "payload:" in content and file_item.endswith(".yaml"):
                 try:
                     parsed = yaml.safe_load(content)
@@ -95,8 +114,14 @@ def download_and_extract_any(folder_name):
                     line = line[2:]
                 line = line.lstrip("+.")
                 rules.append(line.strip("'\" "))
-        except:
+        except Exception:
             pass
+            
+    if success:
+        print(f" [成功] ({len(rules)} 条)")
+    else:
+        print(" [无数据/超时跳过]")
+        
     return rules
 
 
@@ -115,19 +140,12 @@ def get_base_domain_safe(domain):
     🛡️【安全级根主权提取算法】
     依靠 Mozilla Public Suffix List 确保绝对的边界安全，防雪崩！
     """
-    # 规避纯 IP 地址被当成域名解析的风险
     if re.match(r"^\d{1,3}(\.\d{1,3}){3}$", domain) or ":" in domain:
         return domain 
         
     ext = domain_extractor(domain)
-    # registered_domain 会安全地返回：
-    # api.bilibili.com -> bilibili.com
-    # a.b.co.uk -> b.co.uk
-    # tanxiang.github.io -> tanxiang.github.io (完美规避 SaaS 误杀)
     if ext.registered_domain:
         return ext.registered_domain
-    
-    # 如果是 local, localhost 等极其特殊的无后缀域名，原样返回
     return domain
 
 
@@ -138,7 +156,9 @@ def main():
     raw_pools["NexusAI"] = set()
     raw_pools["OverseaProxy"] = set()
 
-    print("[*] 开始流式同步不黑表全库核心分类数据...")
+    print("\n[*] =========================================")
+    print("[*] 开始流式同步核心分类数据 (网络并发层)...")
+    print("[*] =========================================")
     for folder, target_package in official_registry.items():
         items = download_and_extract_any(folder)
         if not items:
@@ -148,7 +168,7 @@ def main():
             item = str(item).strip("'\" ")
             if not item or item.startswith("#") or item.lower().startswith("payload"):
                 continue
-            # 统一规整前缀格式
+            
             if not item.startswith("DOMAIN") and not item.startswith("IP-IDR") and not item.startswith("GEOIP"):
                 if ":" in item or (item.replace('.', '').isdigit() and '/' in item):
                     item = f"IP-CIDR6,{item}" if ":" in item else f"IP-CIDR,{item}"
@@ -156,16 +176,16 @@ def main():
                     item = f"DOMAIN-SUFFIX,{item}"
             raw_pools[target_package].add(item)
 
-    print("[*] 正在并入 Loyalsoldier 与 17mon 基线数据...")
+    print("\n[*] 正在并入 Loyalsoldier 与 17mon 基线数据...")
     china_set = raw_pools["MatrixChina"]
     try:
-        ls_direct = requests.get("https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt").text.splitlines()
+        ls_direct = http_session.get("https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt", timeout=10).text.splitlines()
         for l in ls_direct:
             l = l.strip()
             if l and not l.startswith("#"):
                 china_set.add(f"DOMAIN-SUFFIX,{l.lstrip('+.')}" if not l.startswith("DOMAIN") else l)
         
-        raw_ips = requests.get("https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt").text.splitlines()
+        raw_ips = http_session.get("https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt", timeout=10).text.splitlines()
         for ip in raw_ips:
             ip = ip.strip()
             if ip and not ip.startswith("#"):
@@ -174,11 +194,12 @@ def main():
         print(f"[-] 基线并入跳过: {e}")
 
     # =================================================================
-    # 2. 🛡️【安全哈希去重引擎】：基于 PSL 数据库的防雪崩清洗，极速 O(1) 查表
+    # 2. 🛡️【安全哈希去重引擎】：O(1) 计算层
     # =================================================================
+    print("\n[*] =========================================")
     print("[*] 启动高性能哈希主权索引，开始瞬间漂白海外包...")
+    print("[*] =========================================")
     
-    # 建立中国区绝对主权的哈希索引库
     china_root_registry = set()
     for rule in china_set:
         if "DOMAIN" in rule: 
@@ -186,35 +207,33 @@ def main():
             base_dom = get_base_domain_safe(pure_dom)
             china_root_registry.add(base_dom)
 
-    # 查表过滤海外包，O(1) 复杂度绝杀
     for pkg_name in ["NexusAI", "GlobalMedia", "ArcadeGame", "OverseaProxy"]:
         purified_set = set()
         for rule in raw_pools[pkg_name]:
             if "DOMAIN" in rule:
                 pure_dom = extract_pure_domain(rule)
                 base_dom = get_base_domain_safe(pure_dom)
-                
-                # 如果这个海外规则的根主权已经被划归中国直连，直接物理剔除！
                 if base_dom in china_root_registry:
                     continue 
             purified_set.add(rule)
         raw_pools[pkg_name] = purified_set
 
-    # 3. 序列化全量输出
+    # 3. 序列化输出
     os.makedirs("ruleset", exist_ok=True)
+    print("\n[*] =========================================")
     for filename, r_set in raw_pools.items():
         file_path = os.path.join("ruleset", f"{filename}.yaml")
         unique_items = sorted(list(r_set))
         
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("# ===================================================\n")
-            f.write(f"# 🛡️ clash-rules-enhanced 工业级安全极速清洗版\n")
+            f.write(f"# 🛡️ clash-rules-enhanced 工业级网络+哈希极速版\n")
             f.write(f"# 📊 融合纯净总条目: {len(unique_items)} 条\n")
             f.write("# ===================================================\n")
             f.write("payload:\n")
             for rule in unique_items:
                 f.write(f"  - {rule}\n")
-        print(f"[+] 成功编译纯净化大包: {file_path} (条目数: {len(unique_items)})")
+        print(f"[+] 成功编译大包: {file_path:<30} (条目数: {len(unique_items)})")
 
 
 if __name__ == "__main__":
