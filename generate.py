@@ -129,8 +129,11 @@ def get_base_domain_safe(domain):
         return domain 
         
     ext = domain_extractor(domain)
-    if ext.registered_domain:
-        return ext.registered_domain
+    target_domain = getattr(ext, 'top_domain_under_public_suffix', None) or getattr(ext, 'registered_domain', None)
+    
+    if target_domain:
+        return target_domain
+        
     return domain
 
 
