@@ -10,30 +10,27 @@ jobs:
   merge_job:
     runs-on: ubuntu-latest
     steps:
-    - name: 检出代码
-      uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: 准备 Python 环境
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: 安装脚本依赖组件
-      run: |
-        pip install requests pyyaml
-
-    - name: 执行清洗与打包
-      run: |
-        python generate.py
-
-    - name: 将全新大包同步回仓库
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Actions-Bot"
-        git add ruleset/*.yaml
-        if ! git diff --cached --quiet; then
-          git commit -m "自动同步：全矩阵源规则合并成功"
+      # 🌟 新增这一步：强制让 GitHub 服务器安装我们在代码里引入的高级依赖库
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests PyYAML tldextract
+          
+      - name: Run Generate Script
+        run: python generate.py
+        
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add ruleset/*.yaml
+          git commit -m "Auto update clash rules with PSL purifier" || exit 0
           git push
-        else
-          echo "规则无内容变化，跳过本次推送。"
-        fi
