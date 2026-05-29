@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 工业级双轨安全极速版
-# 📊 融合纯净总条目: 7455 条
+# 📊 融合纯净总条目: 7456 条
 # ===================================================
 payload:
   - DOMAIN,api.waqi.info
@@ -1706,6 +1706,7 @@ payload:
   - DOMAIN-SUFFIX,doujincafe.com
   - DOMAIN-SUFFIX,dowei.org
   - DOMAIN-SUFFIX,dowjones.com
+  - DOMAIN-SUFFIX,dowjones.io
   - DOMAIN-SUFFIX,download.dappcdn.com
   - DOMAIN-SUFFIX,dphk.org
   - DOMAIN-SUFFIX,dpool.top
