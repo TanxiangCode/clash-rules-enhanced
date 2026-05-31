@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 工业级双轨安全极速版
-# 📊 融合纯净总条目: 262190 条
+# 📊 融合纯净总条目: 262194 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -127451,7 +127451,6 @@ payload:
   - DOMAIN-SUFFIX,as-doll.com
   - DOMAIN-SUFFIX,as-hitech.com
   - DOMAIN-SUFFIX,as-hls-ww-live.akamaized.net
-  - DOMAIN-SUFFIX,as.mr
   - DOMAIN-SUFFIX,as16.com
   - DOMAIN-SUFFIX,as3f.com
   - DOMAIN-SUFFIX,as5.com
@@ -237650,10 +237649,7 @@ payload:
   - IP-CIDR,104.212.68.57/32,no-resolve
   - IP-CIDR,104.212.68.58/32
   - IP-CIDR,104.212.68.58/32,no-resolve
-  - IP-CIDR,104.219.211.0/24,no-resolve
   - IP-CIDR,104.227.65.96/28,no-resolve
-  - IP-CIDR,104.233.144.0/21,no-resolve
-  - IP-CIDR,104.233.159.0/24,no-resolve
   - IP-CIDR,104.237.80.0/21,no-resolve
   - IP-CIDR,104.27.168.0/24
   - IP-CIDR,104.27.168.0/24,no-resolve
@@ -238452,9 +238448,6 @@ payload:
   - IP-CIDR,106.80.0.0/13,no-resolve
   - IP-CIDR,106.88.0.0/14,no-resolve
   - IP-CIDR,106.92.0.0/16,no-resolve
-  - IP-CIDR,107.148.150.0/23,no-resolve
-  - IP-CIDR,107.148.84.0/23,no-resolve
-  - IP-CIDR,107.149.198.0/23,no-resolve
   - IP-CIDR,107.150.125.199/32,no-resolve
   - IP-CIDR,107.151.212.0/24,no-resolve
   - IP-CIDR,107.153.91.0/24,no-resolve
@@ -244841,9 +244834,11 @@ payload:
   - IP-CIDR,175.64.0.0/11
   - IP-CIDR,175.64.0.0/11,no-resolve
   - IP-CIDR,176.56.38.0/24,no-resolve
+  - IP-CIDR,177.0.140.0/24,no-resolve
   - IP-CIDR,177.20.208.58/32,no-resolve
   - IP-CIDR,178.219.5.0/24,no-resolve
   - IP-CIDR,178.236.232.0/24,no-resolve
+  - IP-CIDR,178.248.72.0/24,no-resolve
   - IP-CIDR,18.166.207.110/32,no-resolve
   - IP-CIDR,18.166.37.238/32,no-resolve
   - IP-CIDR,18.167.115.91/32,no-resolve
@@ -254575,6 +254570,7 @@ payload:
   - IP-CIDR,43.97.0.0/16,no-resolve
   - IP-CIDR,43.98.0.0/15
   - IP-CIDR,43.98.0.0/15,no-resolve
+  - IP-CIDR,44.30.131.0/24,no-resolve
   - IP-CIDR,44.31.212.0/24,no-resolve
   - IP-CIDR,44.31.216.0/24,no-resolve
   - IP-CIDR,44.31.28.0/24,no-resolve
@@ -260518,6 +260514,7 @@ payload:
   - IP-CIDR6,2600:1f01:4814::/47,no-resolve
   - IP-CIDR6,2602:2a9:d10::/44,no-resolve
   - IP-CIDR6,2602:814:f006::/48,no-resolve
+  - IP-CIDR6,2602:f92a:a468::/47,no-resolve
   - IP-CIDR6,2602:f92a:a46d::/48,no-resolve
   - IP-CIDR6,2602:f92a:a47d::/48,no-resolve
   - IP-CIDR6,2602:f9ba:10c::/48,no-resolve
@@ -261930,6 +261927,10 @@ payload:
   - IP-CIDR6,2a0e:aa07:e148::/48,no-resolve
   - IP-CIDR6,2a0e:aa07:e151::/48,no-resolve
   - IP-CIDR6,2a0e:aa07:e192::/48,no-resolve
+  - IP-CIDR6,2a0e:aa07:e280::/47,no-resolve
+  - IP-CIDR6,2a0e:aa07:e284::/46,no-resolve
+  - IP-CIDR6,2a0e:aa07:e288::/46,no-resolve
+  - IP-CIDR6,2a0e:aa07:e28e::/48,no-resolve
   - IP-CIDR6,2a0e:aa07:f012::/48,no-resolve
   - IP-CIDR6,2a0e:aa07:f0d0::/46,no-resolve
   - IP-CIDR6,2a0e:aa07:f0d4::/47,no-resolve
@@ -262120,11 +262121,13 @@ payload:
   - IP-CIDR6,2a14:67c3:1100::/47,no-resolve
   - IP-CIDR6,2a14:67c3:190::/47,no-resolve
   - IP-CIDR6,2a14:67c3:192::/48,no-resolve
+  - IP-CIDR6,2a14:67c3:9990::/44,no-resolve
   - IP-CIDR6,2a14:67c3:c0::/48,no-resolve
   - IP-CIDR6,2a14:7580:740::/44,no-resolve
   - IP-CIDR6,2a14:7580:fffa::/48,no-resolve
   - IP-CIDR6,2a14:7581:30b6::/48,no-resolve
   - IP-CIDR6,2a14:7581:ffb::/48,no-resolve
+  - IP-CIDR6,2a14:7583:f224::/47,no-resolve
   - IP-CIDR6,2a14:7583:f224::/48,no-resolve
   - IP-CIDR6,2a14:7583:f228::/48,no-resolve
   - IP-CIDR6,2a14:7583:f22c::/48,no-resolve
@@ -262151,6 +262154,7 @@ payload:
   - IP-CIDR6,2a14:7586:6104::/48,no-resolve
   - IP-CIDR6,2a14:7586:6110::/48,no-resolve
   - IP-CIDR6,2a14:7586:6300::/44,no-resolve
+  - IP-CIDR6,2a14:7586:6500::/48,no-resolve
   - IP-CIDR6,2a14:7dc0:506::/48,no-resolve
   - IP-CIDR6,2a14:ae00:50::/44,no-resolve
   - IP-CIDR6,2a14:c380:21::/48,no-resolve
