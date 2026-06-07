@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 工业级双轨安全极速版
-# 📊 融合纯净总条目: 7462 条
+# 📊 融合纯净总条目: 7464 条
 # ===================================================
 payload:
   - DOMAIN,api.waqi.info
@@ -5744,6 +5744,7 @@ payload:
   - DOMAIN-SUFFIX,suroot.com
   - DOMAIN-SUFFIX,surrenderat20.net
   - DOMAIN-SUFFIX,suyangg.com
+  - DOMAIN-SUFFIX,suyingtv.com
   - DOMAIN-SUFFIX,svc.ms
   - DOMAIN-SUFFIX,svsfx.com
   - DOMAIN-SUFFIX,swagbucks.com
@@ -6915,6 +6916,7 @@ payload:
   - DOMAIN-SUFFIX,woyaolian.org
   - DOMAIN-SUFFIX,wozy.in
   - DOMAIN-SUFFIX,wp.com
+  - DOMAIN-SUFFIX,wplace.live
   - DOMAIN-SUFFIX,wpoforum.com
   - DOMAIN-SUFFIX,wqyd.org
   - DOMAIN-SUFFIX,wr.pvp.net
