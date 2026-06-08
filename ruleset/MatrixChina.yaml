@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 工业级双轨安全极速版
-# 📊 融合纯净总条目: 261444 条
+# 📊 融合纯净总条目: 261440 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -112918,6 +112918,7 @@ payload:
   - DOMAIN-SUFFIX,- 'cl2-cdn.origin-apple.com.akadns.net'
   - DOMAIN-SUFFIX,- 'cl2-cn.apple.com'
   - DOMAIN-SUFFIX,- 'cl2.apple.com'
+  - DOMAIN-SUFFIX,- 'cl2.apple.com.edgekey.net.globalredir.akadns.net'
   - DOMAIN-SUFFIX,- 'cl3-cdn.origin-apple.com.akadns.net'
   - DOMAIN-SUFFIX,- 'cl3.apple.com'
   - DOMAIN-SUFFIX,- 'cl4-cdn.origin-apple.com.akadns.net'
@@ -113058,6 +113059,7 @@ payload:
   - DOMAIN-SUFFIX,- 'gs-loc-cn.apple.com'
   - DOMAIN-SUFFIX,- 'gs-loc.apple.com'
   - DOMAIN-SUFFIX,- 'gsp10-ssl-cn.ls.apple.com'
+  - DOMAIN-SUFFIX,- 'gsp11-cn.ls.apple.com'
   - DOMAIN-SUFFIX,- 'gsp12-cn.ls.apple.com'
   - DOMAIN-SUFFIX,- 'gsp13-cn.ls.apple.com'
   - DOMAIN-SUFFIX,- 'gsp4-cn.ls.apple.com'
@@ -113086,8 +113088,6 @@ payload:
   - DOMAIN-SUFFIX,- 'hospital.pku.edu.cn'
   - DOMAIN-SUFFIX,- 'i.dell.com'
   - DOMAIN-SUFFIX,- 'i.pki.goog'
-  - DOMAIN-SUFFIX,- 'icloud-cdn.icloud.com.akadns.net'
-  - DOMAIN-SUFFIX,- 'icloud.cdn-apple.com'
   - DOMAIN-SUFFIX,- 'images-cn-8.ssl-images-amazon.com'
   - DOMAIN-SUFFIX,- 'images-cn.ssl-images-amazon.com'
   - DOMAIN-SUFFIX,- 'images.apple.com.edgekey.net.globalredir.akadns.net'
@@ -113185,10 +113185,8 @@ payload:
   - DOMAIN-SUFFIX,- 'ntp6.aliyun.com'
   - DOMAIN-SUFFIX,- 'ntp7.aliyun.com'
   - DOMAIN-SUFFIX,- 'o.pki.goog'
-  - DOMAIN-SUFFIX,- 'ocsp-lb.apple.com.akadns.net'
   - DOMAIN-SUFFIX,- 'ocsp.apple.com'
   - DOMAIN-SUFFIX,- 'ocsp.pki.goog'
-  - DOMAIN-SUFFIX,- 'ocsp2-lb.apple.com.akadns.net'
   - DOMAIN-SUFFIX,- 'ocsp2.apple.com'
   - DOMAIN-SUFFIX,- 'oemsoc.download.prss.microsoft.com'
   - DOMAIN-SUFFIX,- 'officecdn.microsoft.com'
@@ -113231,7 +113229,6 @@ payload:
   - DOMAIN-SUFFIX,- 'p9-juejin.byteimg.com'
   - DOMAIN-SUFFIX,- 'pagead-googlehosted.l.google.com'
   - DOMAIN-SUFFIX,- 'pancake.apple.com'
-  - DOMAIN-SUFFIX,- 'pancake.cdn-apple.com.akadns.net'
   - DOMAIN-SUFFIX,- 'pba0.apple.com'
   - DOMAIN-SUFFIX,- 'pd-nk.itunes.apple.com'
   - DOMAIN-SUFFIX,- 'pd.itunes.apple.com'
@@ -113264,7 +113261,6 @@ payload:
   - DOMAIN-SUFFIX,- 'refresh-bkg.activation-v2.kaspersky.com'
   - DOMAIN-SUFFIX,- 'res-1.cdn.office.net'
   - DOMAIN-SUFFIX,- 'res.cdn.office.net'
-  - DOMAIN-SUFFIX,- 'reserve-prime.apple.com'
   - DOMAIN-SUFFIX,- 's.mzstatic.com'
   - DOMAIN-SUFFIX,- 's00.upd.kaspersky.com'
   - DOMAIN-SUFFIX,- 's01.upd.kaspersky.com'
