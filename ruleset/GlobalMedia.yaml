@@ -1,6 +1,6 @@
 # ===================================================
-# 🛡️ clash-rules-enhanced 工业级双轨安全极速版
-# 📊 融合纯净总条目: 10841 条
+# 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
+# 📊 融合纯净总条目: 10201 条
 # ===================================================
 payload:
   - DOMAIN,0813a4e76b5d404a97a4070b8e087bc4.mediatailor.us-east-1.amazonaws.com
@@ -114,6 +114,7 @@ payload:
   - DOMAIN,api.groq.com
   - DOMAIN,api.leonardpark.dev
   - DOMAIN,api.okzy.tv
+  - DOMAIN,api.snapkit.com
   - DOMAIN,api.together.xyz
   - DOMAIN,api.visionip.tv
   - DOMAIN,app.live.112.events
@@ -308,6 +309,7 @@ payload:
   - DOMAIN,cnn-cnninternational-1-eu.rakuten.wurl.com
   - DOMAIN,cnn-cnninternational-1-gb.samsung.wurl.com
   - DOMAIN,cnnsanjuan.com
+  - DOMAIN,cocacola.co.jp
   - DOMAIN,comedy-redbox.amagi.tv
   - DOMAIN,common01.todostreaming.es
   - DOMAIN,coninfo.net
@@ -319,6 +321,7 @@ payload:
   - DOMAIN,contributionstreams.ashttp9.visionip.tv
   - DOMAIN,contv.sinclair.wurl.com
   - DOMAIN,copilot-proxy.githubusercontent.com
+  - DOMAIN,courses.snapsolve.com
   - DOMAIN,cp.sradiotv.com
   - DOMAIN,cpd.bailen.tv
   - DOMAIN,cqnygl001.morequick.cn
@@ -427,6 +430,7 @@ payload:
   - DOMAIN,emisoras.hn
   - DOMAIN,encoder3.ywcity.cn
   - DOMAIN,endemol-dealornodeal-1.sinclair.wurl.com
+  - DOMAIN,engagements.appsflyer.com
   - DOMAIN,envivo.galacticatv.com
   - DOMAIN,epg.112114.xyz
   - DOMAIN,epg.pm
@@ -688,8 +692,14 @@ payload:
   - DOMAIN,lds-wonder-samsungau.amagi.tv
   - DOMAIN,legochannel-roku.amagi.tv
   - DOMAIN,legochannel-vizio.amagi.tv
+  - DOMAIN,lf16-campaign.ttlstatic.com
+  - DOMAIN,lf16-csp.oecstatic.com
   - DOMAIN,lf16-effectcdn.byteeffecttos-g.com
   - DOMAIN,lf16-pkgcdn.pitaya-clientai.com
+  - DOMAIN,lf16-scmcdn.oecstatic.com
+  - DOMAIN,lf19-csp.oecstatic.com
+  - DOMAIN,lf19-pkgcdn.pitaya-clientai.com
+  - DOMAIN,lf19-scmcdn.oecstatic.com
   - DOMAIN,lifetv.bitflip.ee
   - DOMAIN,lightning-tracesport-samsungau.amagi.tv
   - DOMAIN,lightning-traceurban-samsungau.amagi.tv
@@ -903,13 +913,11 @@ payload:
   - DOMAIN,livebroadcast.ccwb.cn
   - DOMAIN,livebroadcastys.ccwb.cn
   - DOMAIN,livecdn.pull.cdbs.com.cn
-  - DOMAIN,livecdn1.news.cn
   - DOMAIN,livefa.marjaeyattv.com
   - DOMAIN,livefta.malimarcdn.com
   - DOMAIN,liveko24-manminglobal3.ktcdn.co.kr
   - DOMAIN,livelist01.yowi.tv
   - DOMAIN,livem.gsshop.com
-  - DOMAIN,liveop.cctv.cn
   - DOMAIN,liveorigin01.hbogoasia.com
   - DOMAIN,liveout.ycxrmt.cn
   - DOMAIN,liveplay.rednet.cn
@@ -1009,6 +1017,8 @@ payload:
   - DOMAIN,mtxstr001.matrixdata.nl
   - DOMAIN,muenchentv.iptv-playoutcenter.de
   - DOMAIN,music.youtube.com
+  - DOMAIN,musically-alternate.app.link
+  - DOMAIN,musically.app.link
   - DOMAIN,mv2.tvfrancophonie.org
   - DOMAIN,mytime-tcl.amagi.tv
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net
@@ -1181,6 +1191,7 @@ payload:
   - DOMAIN,rfo.iptv-playoutcenter.de
   - DOMAIN,rialto-rialto-samsungaustralia.amagi.tv
   - DOMAIN,rifftrax.samsung.wurl.com
+  - DOMAIN,roovza-launches.appsflyersdk.com
   - DOMAIN,rpg.pic-imges.com
   - DOMAIN,rpn1.bozztv.com
   - DOMAIN,rrr.sz.xlcdn.com
@@ -1282,7 +1293,6 @@ payload:
   - DOMAIN,sofytv-samsungit.amagi.tv
   - DOMAIN,sofytv-samsunguk.amagi.tv
   - DOMAIN,sonar.sinclair.wurl.com
-  - DOMAIN,source07.v.news.cn
   - DOMAIN,spacetv.in
   - DOMAIN,sparktv-samsunguk.amagi.tv
   - DOMAIN,spas.mediacdn.ru
@@ -1789,6 +1799,8 @@ payload:
   - DOMAIN,yayin3.canlitv.com
   - DOMAIN,yerelmedya.tv
   - DOMAIN,yjh3p.stream.miraclechannel.com
+  - DOMAIN,youtubei.googleapis.com
+  - DOMAIN,yt3.ggpht.com
   - DOMAIN,ytnmmd.mmdlive.lldns.net
   - DOMAIN,yubeilive.cbg.cn
   - DOMAIN,yurgan.bonus-tv.ru
@@ -1800,10 +1812,13 @@ payload:
   - DOMAIN,zoomoo-samsungau.amagi.tv
   - DOMAIN,zuzenean.goienamedia.eus
   - DOMAIN-KEYWORD,.hbogoasia.
+  - DOMAIN-KEYWORD,abematv.akamaized.net
   - DOMAIN-KEYWORD,anthropic
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
   - DOMAIN-KEYWORD,avoddashs
   - DOMAIN-KEYWORD,bbcfmt
+  - DOMAIN-KEYWORD,bilibili
+  - DOMAIN-KEYWORD,bytedance.map.
   - DOMAIN-KEYWORD,claude
   - DOMAIN-KEYWORD,cn-hk-eq-bcache-
   - DOMAIN-KEYWORD,discovery.uplynk.com
@@ -1817,40 +1832,27 @@ payload:
   - DOMAIN-KEYWORD,jmsooo
   - DOMAIN-KEYWORD,jooxweb-api
   - DOMAIN-KEYWORD,musical.ly
+  - DOMAIN-KEYWORD,musical.ly.
   - DOMAIN-KEYWORD,netflixdnstest
   - DOMAIN-KEYWORD,nivod
   - DOMAIN-KEYWORD,nowtv100
   - DOMAIN-KEYWORD,odysseyplus
   - DOMAIN-KEYWORD,olevod
+  - DOMAIN-KEYWORD,qiyi
   - DOMAIN-KEYWORD,rthklive
   - DOMAIN-KEYWORD,spotify
   - DOMAIN-KEYWORD,tiktok
   - DOMAIN-KEYWORD,tiktokcdn
+  - DOMAIN-KEYWORD,tiktokcdn-
+  - DOMAIN-KEYWORD,tiktokcdn.com.
+  - DOMAIN-KEYWORD,tiktokv.com.
+  - DOMAIN-KEYWORD,ttcdn-tos.
+  - DOMAIN-KEYWORD,ttlivecdn.com.
   - DOMAIN-KEYWORD,ttvnw
   - DOMAIN-KEYWORD,tvbanywhere
   - DOMAIN-KEYWORD,uk-live
   - DOMAIN-KEYWORD,voddazn
   - DOMAIN-KEYWORD,youtube
-  - DOMAIN-SUFFIX,001dl.cn
-  - DOMAIN-SUFFIX,002dl.cn
-  - DOMAIN-SUFFIX,003dl.cn
-  - DOMAIN-SUFFIX,004dl.cn
-  - DOMAIN-SUFFIX,005dl.cn
-  - DOMAIN-SUFFIX,006dl.cn
-  - DOMAIN-SUFFIX,007dl.cn
-  - DOMAIN-SUFFIX,007url.cn
-  - DOMAIN-SUFFIX,008dl.cn
-  - DOMAIN-SUFFIX,009dl.cn
-  - DOMAIN-SUFFIX,011dl.cn
-  - DOMAIN-SUFFIX,012dl.cn
-  - DOMAIN-SUFFIX,013dl.cn
-  - DOMAIN-SUFFIX,014dl.cn
-  - DOMAIN-SUFFIX,015dl.cn
-  - DOMAIN-SUFFIX,016dl.cn
-  - DOMAIN-SUFFIX,017dl.cn
-  - DOMAIN-SUFFIX,018dl.cn
-  - DOMAIN-SUFFIX,019dl.cn
-  - DOMAIN-SUFFIX,020dl.cn
   - DOMAIN-SUFFIX,0813a4e76b5d404a97a4070b8e087bc4.mediatailor.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,0b1ea79d9170498c91073ff8c460de18.mediatailor.us-west-2.amazonaws.com
   - DOMAIN-SUFFIX,0bdf3efc906045538c63468aa2f86a96.mediatailor.us-west-2.amazonaws.com
@@ -1865,7 +1867,6 @@ payload:
   - DOMAIN-SUFFIX,123tv-mx1.flex-cdn.net
   - DOMAIN-SUFFIX,123tv.cdn.ses-ps.com
   - DOMAIN-SUFFIX,16-rtvslo-tv-slo3-int.cdn.eurovisioncdn.net
-  - DOMAIN-SUFFIX,1700.cn
   - DOMAIN-SUFFIX,1aadf145546f475282c5b4e658c0ac4b.msvdn.net
   - DOMAIN-SUFFIX,1f0e60dbce3043279c491fe51983361d.mediatailor.us-west-2.amazonaws.com
   - DOMAIN-SUFFIX,1music.hu
@@ -1883,7 +1884,6 @@ payload:
   - DOMAIN-SUFFIX,29-rtvslo-tv-mmc-int.cdn.eurovisioncdn.net
   - DOMAIN-SUFFIX,2e9acc44.kartoshkaka.ru
   - DOMAIN-SUFFIX,2fb88e730c2647d69629c6f90b0b98b9.mediatailor.us-west-2.amazonaws.com
-  - DOMAIN-SUFFIX,2sos.cn
   - DOMAIN-SUFFIX,30a-tv.com
   - DOMAIN-SUFFIX,31-rtvslo-tv-slo1-int.cdn.eurovisioncdn.net
   - DOMAIN-SUFFIX,32.shqiptv.org
@@ -1899,8 +1899,6 @@ payload:
   - DOMAIN-SUFFIX,4ea7abcc97144832b81dc50c6e8d6330.mediatailor.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,4gtv.tv
   - DOMAIN-SUFFIX,4k-server-mia.2cdn.eu
-  - DOMAIN-SUFFIX,4short.cn
-  - DOMAIN-SUFFIX,4surl.cn
   - DOMAIN-SUFFIX,547f72e6652371c3.mediapackage.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,55e014b3437040d08777729c863a2097.mediatailor.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,5dcc6a54d90e8c5dc4345c16-s-4.ssai.zype.com
@@ -1924,7 +1922,6 @@ payload:
   - DOMAIN-SUFFIX,95eryw39dwn4-hls-live.wmncdn.net
   - DOMAIN-SUFFIX,98d91ca32ff6fbca255f6ec9f29fc4d0-httpcache0-19333-cachelive0.dna.ip-only.net
   - DOMAIN-SUFFIX,9cc8074b.melpakomn.ru
-  - DOMAIN-SUFFIX,9uma.cn
   - DOMAIN-SUFFIX,a.jsrdn.com
   - DOMAIN-SUFFIX,a3569455801-s26881.cdn.ngenix.net
   - DOMAIN-SUFFIX,a500d902bdf94ea69ad343720add6036.mediatailor.us-west-2.amazonaws.com
@@ -1935,17 +1932,8 @@ payload:
   - DOMAIN-SUFFIX,abema-tv.com
   - DOMAIN-SUFFIX,abema.io
   - DOMAIN-SUFFIX,abema.tv
-  - DOMAIN-SUFFIX,abetterchoice.cn
   - DOMAIN-SUFFIX,aboutamazon.com
   - DOMAIN-SUFFIX,abr.de1se01.v2beat.live
-  - DOMAIN-SUFFIX,accessibility-union.cn
-  - DOMAIN-SUFFIX,accessibility-union.net.cn
-  - DOMAIN-SUFFIX,accessibility-union.org.cn
-  - DOMAIN-SUFFIX,accessibilityunion.cn
-  - DOMAIN-SUFFIX,accessibilityunion.com.cn
-  - DOMAIN-SUFFIX,accessibilityunion.net.cn
-  - DOMAIN-SUFFIX,accessibilityunion.org.cn
-  - DOMAIN-SUFFIX,acimg.cn
   - DOMAIN-SUFFIX,acv.asianetmobiletvplus.com
   - DOMAIN-SUFFIX,ad-playlistserver.aws.syncbak.com
   - DOMAIN-SUFFIX,admdn2.cdn.mangomolo.com
@@ -2039,8 +2027,6 @@ payload:
   - DOMAIN-SUFFIX,appletree-mytime-samsungbrazil.amagi.tv
   - DOMAIN-SUFFIX,appletree-mytime-samsungmexico.amagi.tv
   - DOMAIN-SUFFIX,appletree-mytimespain-rakuten.amagi.tv
-  - DOMAIN-SUFFIX,aquaterra.cn
-  - DOMAIN-SUFFIX,aquaterra.com.cn
   - DOMAIN-SUFFIX,arcast.net
   - DOMAIN-SUFFIX,arhat.tv
   - DOMAIN-SUFFIX,asdiuhiu12.myvodu.app
@@ -2061,7 +2047,6 @@ payload:
   - DOMAIN-SUFFIX,audiolive.rbc.cn
   - DOMAIN-SUFFIX,audiotvserver.net
   - DOMAIN-SUFFIX,ausbiztv-ausbiz-1-au.samsung.wurl.com
-  - DOMAIN-SUFFIX,autolabautobus.cn
   - DOMAIN-SUFFIX,autopilot.catcast.tv
   - DOMAIN-SUFFIX,aws.jmsooo.com
   - DOMAIN-SUFFIX,ax.micaesoft.com
@@ -2110,24 +2095,18 @@ payload:
   - DOMAIN-SUFFIX,bidi.net.uk
   - DOMAIN-SUFFIX,bigbigchannel.com.hk
   - DOMAIN-SUFFIX,bigbigshop.com
-  - DOMAIN-SUFFIX,bigfun.cn
-  - DOMAIN-SUFFIX,bigfunapp.cn
   - DOMAIN-SUFFIX,biggggg.com
   - DOMAIN-SUFFIX,biglife.sinclair.wurl.com
   - DOMAIN-SUFFIX,bili22.cn
   - DOMAIN-SUFFIX,bili2233.cn
   - DOMAIN-SUFFIX,bili23.cn
   - DOMAIN-SUFFIX,bili33.cn
-  - DOMAIN-SUFFIX,bilibili.cn
   - DOMAIN-SUFFIX,bilibiligame.cn
   - DOMAIN-SUFFIX,bilibilipay.cn
   - DOMAIN-SUFFIX,biligame.cn
-  - DOMAIN-SUFFIX,bilivideo.cn
-  - DOMAIN-SUFFIX,binaryai.cn
   - DOMAIN-SUFFIX,biptv.tv
   - DOMAIN-SUFFIX,bitcdn-kronehit.bitmovin.com
   - DOMAIN-SUFFIX,bitmovin.com
-  - DOMAIN-SUFFIX,bk-cdn.cn
   - DOMAIN-SUFFIX,bk7l298nyx53-hls-live.5centscdn.com
   - DOMAIN-SUFFIX,bk7l2pn7dx53-hls-live.5centscdn.com
   - DOMAIN-SUFFIX,bk7l2w4nlx53-hls-live.5centscdn.com
@@ -2140,7 +2119,6 @@ payload:
   - DOMAIN-SUFFIX,bnwdplewrp3a-hls-live.wmncdn.net
   - DOMAIN-SUFFIX,bobross-xumous-ingest.cinedigm.com
   - DOMAIN-SUFFIX,boliviatv1.srfms.com
-  - DOMAIN-SUFFIX,boombeach.cn
   - DOMAIN-SUFFIX,bootstrapcdn.com
   - DOMAIN-SUFFIX,bowenpress.com
   - DOMAIN-SUFFIX,boxun.com
@@ -2148,7 +2126,6 @@ payload:
   - DOMAIN-SUFFIX,bqgsd19q.rocketcdn.com
   - DOMAIN-SUFFIX,brat-rakuten.amagi.tv
   - DOMAIN-SUFFIX,bravotv.com
-  - DOMAIN-SUFFIX,brawlstars.cn
   - DOMAIN-SUFFIX,braze.com
   - DOMAIN-SUFFIX,brics.bonus-tv.ru
   - DOMAIN-SUFFIX,britbox.co.uk
@@ -2156,13 +2133,20 @@ payload:
   - DOMAIN-SUFFIX,broadcasttr.com
   - DOMAIN-SUFFIX,bsttv.bonus-tv.ru
   - DOMAIN-SUFFIX,bucketeer.jp
-  - DOMAIN-SUFFIX,businessinchina.com.cn
   - DOMAIN-SUFFIX,butv10-livestream.bu.edu
   - DOMAIN-SUFFIX,buzzr-samsungus.amagi.tv
   - DOMAIN-SUFFIX,byspotify.com
+  - DOMAIN-SUFFIX,bytefcdn-oversea.com
+  - DOMAIN-SUFFIX,bytefcdn-ttpeu.com
   - DOMAIN-SUFFIX,bytegecko-i18n.com
+  - DOMAIN-SUFFIX,byteglb.com
+  - DOMAIN-SUFFIX,byteicdn.com
+  - DOMAIN-SUFFIX,byteigtm.com
+  - DOMAIN-SUFFIX,byteintl.com
   - DOMAIN-SUFFIX,byteintlapi.com
   - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,byteoversea.net
+  - DOMAIN-SUFFIX,bytetcdn.com
   - DOMAIN-SUFFIX,c.mjh.nz
   - DOMAIN-SUFFIX,c0.cdn.trinity-tv.net
   - DOMAIN-SUFFIX,c2.manasat.com
@@ -2211,7 +2195,6 @@ payload:
   - DOMAIN-SUFFIX,cbsstore.com
   - DOMAIN-SUFFIX,cbssvideo.com
   - DOMAIN-SUFFIX,cbstelevisioncity.com
-  - DOMAIN-SUFFIX,cctv.cn
   - DOMAIN-SUFFIX,cctvlib.cn
   - DOMAIN-SUFFIX,cctvlib.com.cn
   - DOMAIN-SUFFIX,cctvlibrary.cn
@@ -2227,7 +2210,6 @@ payload:
   - DOMAIN-SUFFIX,cdn-cdn-iguacu.ciclano.io
   - DOMAIN-SUFFIX,cdn-cekmekoybeltv.yayin.com.tr
   - DOMAIN-SUFFIX,cdn-fundacao-2110.ciclano.io
-  - DOMAIN-SUFFIX,cdn-go.cn
   - DOMAIN-SUFFIX,cdn-haber61tv.yayin.com.tr
   - DOMAIN-SUFFIX,cdn-hls.globecast.tv
   - DOMAIN-SUFFIX,cdn-kanal10.crossnet.net
@@ -2276,7 +2258,6 @@ payload:
   - DOMAIN-SUFFIX,cdn12.henico.net
   - DOMAIN-SUFFIX,cdn18.live247stream.com
   - DOMAIN-SUFFIX,cdn19.live247stream.com
-  - DOMAIN-SUFFIX,cdn2-go.cn
   - DOMAIN-SUFFIX,cdn2.envivo.win
   - DOMAIN-SUFFIX,cdn2.live247stream.com
   - DOMAIN-SUFFIX,cdn2.ujjina.com
@@ -2297,10 +2278,6 @@ payload:
   - DOMAIN-SUFFIX,cdnhd.iblups.com
   - DOMAIN-SUFFIX,cdnlive.irib.ir
   - DOMAIN-SUFFIX,cdnmg.secure.live.rtr-vesti.ru
-  - DOMAIN-SUFFIX,cdnv1.cn
-  - DOMAIN-SUFFIX,cdnv2.cn
-  - DOMAIN-SUFFIX,cdnv3.cn
-  - DOMAIN-SUFFIX,cdnv4-go.cn
   - DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
   - DOMAIN-SUFFIX,cf1.jmsooo.com
   - DOMAIN-SUFFIX,ch.iptvmate.net
@@ -2313,16 +2290,11 @@ payload:
   - DOMAIN-SUFFIX,cheddar-news12ny-1.plex.wurl.com
   - DOMAIN-SUFFIX,chgtrk.ru
   - DOMAIN-SUFFIX,chinaepg.cn
-  - DOMAIN-SUFFIX,chinatechie.cn
-  - DOMAIN-SUFFIX,chinatechie.com.cn
   - DOMAIN-SUFFIX,chocotv.com.tw
   - DOMAIN-SUFFIX,cineapp.org
   - DOMAIN-SUFFIX,cinemax.com
   - DOMAIN-SUFFIX,circle-roku.amagi.tv
   - DOMAIN-SUFFIX,citv.net.cn
-  - DOMAIN-SUFFIX,clashminigame.cn
-  - DOMAIN-SUFFIX,clashofclans.cn
-  - DOMAIN-SUFFIX,clashroyale.cn
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,claudeusercontent.com
@@ -2331,24 +2303,14 @@ payload:
   - DOMAIN-SUFFIX,cloud.logicwebs.in
   - DOMAIN-SUFFIX,cloud.streamingconnect.tv
   - DOMAIN-SUFFIX,cloud2.streaminglivehd.com
-  - DOMAIN-SUFFIX,cloudbase.cn
-  - DOMAIN-SUFFIX,cloudbase.com.cn
-  - DOMAIN-SUFFIX,cloudcdnv1.cn
   - DOMAIN-SUFFIX,cloudflare-cdn301.ottpro.in
   - DOMAIN-SUFFIX,cloudflare.streamgato.us
   - DOMAIN-SUFFIX,cloudflare.tv
   - DOMAIN-SUFFIX,cloudfront44.lexanetwork.com
-  - DOMAIN-SUFFIX,cloudpages.cn
-  - DOMAIN-SUFFIX,cloudsesbk.cn
-  - DOMAIN-SUFFIX,cloudsesbk.com.cn
   - DOMAIN-SUFFIX,cloudvideo.servers10.com
-  - DOMAIN-SUFFIX,clsshare.cn
-  - DOMAIN-SUFFIX,clsshare.com.cn
   - DOMAIN-SUFFIX,clubbingtv-rakuten.amagi.tv
   - DOMAIN-SUFFIX,clubbingtv-samsunguk.amagi.tv
   - DOMAIN-SUFFIX,cm.hostlagarto.com
-  - DOMAIN-SUFFIX,cmgdb.cn
-  - DOMAIN-SUFFIX,cmgdb.com.cn
   - DOMAIN-SUFFIX,cms-wowza.lunabyte.io
   - DOMAIN-SUFFIX,cnbc.com
   - DOMAIN-SUFFIX,cnbcfm.com
@@ -2363,16 +2325,11 @@ payload:
   - DOMAIN-SUFFIX,cnnlabs.com
   - DOMAIN-SUFFIX,cnnmoney.ch
   - DOMAIN-SUFFIX,cnnsanjuan.com
-  - DOMAIN-SUFFIX,cntv.cn
   - DOMAIN-SUFFIX,cntv.com.cn
   - DOMAIN-SUFFIX,cntvwb.cn
   - DOMAIN-SUFFIX,cobeuz.fr
   - DOMAIN-SUFFIX,cobuz.fr
   - DOMAIN-SUFFIX,cobuzz.fr
-  - DOMAIN-SUFFIX,cocdn.cn
-  - DOMAIN-SUFFIX,codehub.cn
-  - DOMAIN-SUFFIX,cofile.com.cn
-  - DOMAIN-SUFFIX,cofile.net.cn
   - DOMAIN-SUFFIX,comedy-redbox.amagi.tv
   - DOMAIN-SUFFIX,common01.todostreaming.es
   - DOMAIN-SUFFIX,coninfo.net
@@ -2397,7 +2354,6 @@ payload:
   - DOMAIN-SUFFIX,crackle-xumo.amagi.tv
   - DOMAIN-SUFFIX,crimetimebamca-roku.amagi.tv
   - DOMAIN-SUFFIX,cristiamo.xyz
-  - DOMAIN-SUFFIX,crmpower.cn
   - DOMAIN-SUFFIX,cs.ebmcdn.net
   - DOMAIN-SUFFIX,cs428.wpc.edgecastcdn.net
   - DOMAIN-SUFFIX,csm-e-boxplus.tls1.yospace.com
@@ -2407,7 +2363,6 @@ payload:
   - DOMAIN-SUFFIX,cstatic.net
   - DOMAIN-SUFFIX,csvl03.manasat.com
   - DOMAIN-SUFFIX,csvl04.manasat.com
-  - DOMAIN-SUFFIX,cunistatic.cn
   - DOMAIN-SUFFIX,curbed.com
   - DOMAIN-SUFFIX,curiositystream.com
   - DOMAIN-SUFFIX,cursor.com
@@ -2418,9 +2373,6 @@ payload:
   - DOMAIN-SUFFIX,d397e8970cd346fdac04c0af81290c3a.mediatailor.us-west-2.amazonaws.com
   - DOMAIN-SUFFIX,d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com
   - DOMAIN-SUFFIX,d9.flashtalking.com
-  - DOMAIN-SUFFIX,dafenghk.cn
-  - DOMAIN-SUFFIX,dafenghk.com.cn
-  - DOMAIN-SUFFIX,dafenghk.hk.cn
   - DOMAIN-SUFFIX,dagestan.mediacdn.ru
   - DOMAIN-SUFFIX,dai.ly
   - DOMAIN-SUFFIX,dai2-playlistserver.aws.syncbak.com
@@ -2431,12 +2383,10 @@ payload:
   - DOMAIN-SUFFIX,darivoa.com
   - DOMAIN-SUFFIX,darkmatter-por-samsungbrazil.amagi.tv
   - DOMAIN-SUFFIX,dashasiafox.akamaized.netflix
-  - DOMAIN-SUFFIX,dashenw.cn
   - DOMAIN-SUFFIX,daum.net
   - DOMAIN-SUFFIX,daumcdn.net
   - DOMAIN-SUFFIX,daumkakao.io
   - DOMAIN-SUFFIX,daumpotplayer.com
-  - DOMAIN-SUFFIX,dayugslb.cn
   - DOMAIN-SUFFIX,dazn-api.com
   - DOMAIN-SUFFIX,dazn.com
   - DOMAIN-SUFFIX,dazndn.com
@@ -2454,12 +2404,10 @@ payload:
   - DOMAIN-SUFFIX,dccd6216f2c9471399015e69d64818cd.mediatailor.us-west-2.amazonaws.com
   - DOMAIN-SUFFIX,de1se01.v2beat.live
   - DOMAIN-SUFFIX,deezer.com
-  - DOMAIN-SUFFIX,deltaverse.cn
   - DOMAIN-SUFFIX,demandafrica-klowdtv.amagi.tv
   - DOMAIN-SUFFIX,demandafrica-samsungmexico.amagi.tv
   - DOMAIN-SUFFIX,dengeamerika.com
   - DOMAIN-SUFFIX,dengiamerika.com
-  - DOMAIN-SUFFIX,devcopilot.cn
   - DOMAIN-SUFFIX,dhx-degrassi-2-ca.samsung.wurl.tv
   - DOMAIN-SUFFIX,digicert.com
   - DOMAIN-SUFFIX,digicom.hls.iptvdc.com
@@ -2568,7 +2516,6 @@ payload:
   - DOMAIN-SUFFIX,disneyturkiye.com.tr
   - DOMAIN-SUFFIX,disneytvajobs.com
   - DOMAIN-SUFFIX,disneyworld-go.com
-  - DOMAIN-SUFFIX,dllzff.cn
   - DOMAIN-SUFFIX,dlp-media.com
   - DOMAIN-SUFFIX,dltv-live-edge.catcdn.cloud
   - DOMAIN-SUFFIX,dm-event.net
@@ -2588,29 +2535,11 @@ payload:
   - DOMAIN-SUFFIX,dmxleo.com
   - DOMAIN-SUFFIX,dnitv.com
   - DOMAIN-SUFFIX,dns2.rtvbn.com
-  - DOMAIN-SUFFIX,dnsapi.cn
-  - DOMAIN-SUFFIX,dnse0.cn
-  - DOMAIN-SUFFIX,dnse1.cn
-  - DOMAIN-SUFFIX,dnse2.cn
-  - DOMAIN-SUFFIX,dnse3.cn
-  - DOMAIN-SUFFIX,dnse4.cn
-  - DOMAIN-SUFFIX,dnse5.cn
-  - DOMAIN-SUFFIX,dnspod.cn
-  - DOMAIN-SUFFIX,dnspod.com.cn
-  - DOMAIN-SUFFIX,dnsv1.com.cn
-  - DOMAIN-SUFFIX,dnsv10.com.cn
-  - DOMAIN-SUFFIX,dnsv11.com.cn
-  - DOMAIN-SUFFIX,dnsv12.com.cn
-  - DOMAIN-SUFFIX,dnsv6.com.cn
-  - DOMAIN-SUFFIX,dnsv7.com.cn
-  - DOMAIN-SUFFIX,dnsv8.com.cn
-  - DOMAIN-SUFFIX,dnsv9.com.cn
   - DOMAIN-SUFFIX,dogatch.jp
   - DOMAIN-SUFFIX,dokusho-ojikan.jp
   - DOMAIN-SUFFIX,domesticmedia.cn
   - DOMAIN-SUFFIX,domesticmediagame.cn
   - DOMAIN-SUFFIX,domesticmediapay.cn
-  - DOMAIN-SUFFIX,dothework.cn
   - DOMAIN-SUFFIX,dslive.grtn.cn
   - DOMAIN-SUFFIX,dssedge.com
   - DOMAIN-SUFFIX,dssott.com
@@ -2620,7 +2549,6 @@ payload:
   - DOMAIN-SUFFIX,dust-gb.samsung.wurl.com
   - DOMAIN-SUFFIX,dust.sinclair.wurl.com
   - DOMAIN-SUFFIX,dvr.ch20-cdnwiz.com
-  - DOMAIN-SUFFIX,dyinglightcommunity.cn
   - DOMAIN-SUFFIX,dzcdn.net
   - DOMAIN-SUFFIX,e-e.cyou
   - DOMAIN-SUFFIX,e-hentai.org
@@ -2635,8 +2563,6 @@ payload:
   - DOMAIN-SUFFIX,ebsonairios.ebs.co.kr
   - DOMAIN-SUFFIX,ec.playmedia.fr
   - DOMAIN-SUFFIX,eco.streams.ovh
-  - DOMAIN-SUFFIX,ectencent.cn
-  - DOMAIN-SUFFIX,ectencent.com.cn
   - DOMAIN-SUFFIX,ecuastreamhd.com
   - DOMAIN-SUFFIX,ed1ov.live.opencaster.com
   - DOMAIN-SUFFIX,edge-ind.inapcdn.in
@@ -2701,8 +2627,6 @@ payload:
   - DOMAIN-SUFFIX,encoretvb.com
   - DOMAIN-SUFFIX,endemol-dealornodeal-1.sinclair.wurl.com
   - DOMAIN-SUFFIX,envivo.galacticatv.com
-  - DOMAIN-SUFFIX,eo-edgefunctions.cn
-  - DOMAIN-SUFFIX,eoacme0.cn
   - DOMAIN-SUFFIX,eonline.com
   - DOMAIN-SUFFIX,epg.112114.xyz
   - DOMAIN-SUFFIX,epg.pm
@@ -2715,8 +2639,6 @@ payload:
   - DOMAIN-SUFFIX,espncdn.com
   - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
   - DOMAIN-SUFFIX,espnqa.com
-  - DOMAIN-SUFFIX,esportsreg.cn
-  - DOMAIN-SUFFIX,essurl.cn
   - DOMAIN-SUFFIX,estrellanews-plex.amagi.tv
   - DOMAIN-SUFFIX,estrellatv-plex.amagi.tv
   - DOMAIN-SUFFIX,estv-rakuten-samsung.amagi.tv
@@ -2736,6 +2658,7 @@ payload:
   - DOMAIN-SUFFIX,euvia.cdn.ses-ps.com
   - DOMAIN-SUFFIX,evo.eltelon.com
   - DOMAIN-SUFFIX,evpp.mm.uol.com.br
+  - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,exhentai.org
   - DOMAIN-SUFFIX,ext-twitch.tv
@@ -2761,7 +2684,6 @@ payload:
   - DOMAIN-SUFFIX,fidotv-roku.amagi.tv
   - DOMAIN-SUFFIX,file.ncntv.com.cn
   - DOMAIN-SUFFIX,file.xsbnrtv.cn
-  - DOMAIN-SUFFIX,financetcloud.cn
   - DOMAIN-SUFFIX,findyourlimits.com
   - DOMAIN-SUFFIX,firebaseio.com
   - DOMAIN-SUFFIX,fl1.mediastreaming.it
@@ -2778,7 +2700,6 @@ payload:
   - DOMAIN-SUFFIX,flusonic-1.platinum-tv.com
   - DOMAIN-SUFFIX,flusonic-4.platinum-tv.com
   - DOMAIN-SUFFIX,flxvpn.net
-  - DOMAIN-SUFFIX,flzhan.cn
   - DOMAIN-SUFFIX,fms-https1.mediadirect.ro
   - DOMAIN-SUFFIX,fms.nrwision.de
   - DOMAIN-SUFFIX,fms.tvavicenza.it
@@ -2863,7 +2784,6 @@ payload:
   - DOMAIN-SUFFIX,foxla.com
   - DOMAIN-SUFFIX,foxla.tv
   - DOMAIN-SUFFIX,foxlexington.com
-  - DOMAIN-SUFFIX,foxmail.com.cn
   - DOMAIN-SUFFIX,foxmediacloud.com
   - DOMAIN-SUFFIX,foxnation.com
   - DOMAIN-SUFFIX,foxnebraska.com
@@ -2966,11 +2886,6 @@ payload:
   - DOMAIN-SUFFIX,frontdoor.wcat-tv.org
   - DOMAIN-SUFFIX,fs.live.sr.de
   - DOMAIN-SUFFIX,fse.tv
-  - DOMAIN-SUFFIX,fsight.cn
-  - DOMAIN-SUFFIX,fsight.com.cn
-  - DOMAIN-SUFFIX,fsight.net.cn
-  - DOMAIN-SUFFIX,fsllq.com.cn
-  - DOMAIN-SUFFIX,fsphere.cn
   - DOMAIN-SUFFIX,fssta.com
   - DOMAIN-SUFFIX,ft-ifood-roku.amagi.tv
   - DOMAIN-SUFFIX,ftp.orbita.dn.ua
@@ -2986,53 +2901,8 @@ payload:
   - DOMAIN-SUFFIX,fxn.ws
   - DOMAIN-SUFFIX,fxnetwork.com
   - DOMAIN-SUFFIX,fxnetworks.com
-  - DOMAIN-SUFFIX,fypage.cn
-  - DOMAIN-SUFFIX,fypage.com.cn
-  - DOMAIN-SUFFIX,g0wx.cn
   - DOMAIN-SUFFIX,g5nl6xx5lpq6-hls-live.5centscdn.com
-  - DOMAIN-SUFFIX,gaapacc001.com.cn
-  - DOMAIN-SUFFIX,gaapacc002.com.cn
-  - DOMAIN-SUFFIX,gaapacc003.com.cn
-  - DOMAIN-SUFFIX,gaapacc004.com.cn
-  - DOMAIN-SUFFIX,gaapacc005.com.cn
-  - DOMAIN-SUFFIX,gaapacc006.com.cn
-  - DOMAIN-SUFFIX,gaapacc007.com.cn
-  - DOMAIN-SUFFIX,gaapacc008.com.cn
-  - DOMAIN-SUFFIX,gaapacc009.com.cn
-  - DOMAIN-SUFFIX,gaapacc010.com.cn
-  - DOMAIN-SUFFIX,gaapacc011.com.cn
-  - DOMAIN-SUFFIX,gaapacc012.com.cn
-  - DOMAIN-SUFFIX,gaapacc013.com.cn
-  - DOMAIN-SUFFIX,gaapacc014.com.cn
-  - DOMAIN-SUFFIX,gaapacc015.com.cn
-  - DOMAIN-SUFFIX,gaapacc016.com.cn
-  - DOMAIN-SUFFIX,gaapacc017.com.cn
-  - DOMAIN-SUFFIX,gaapacc018.com.cn
-  - DOMAIN-SUFFIX,gaapacc019.com.cn
-  - DOMAIN-SUFFIX,gaapacc020.com.cn
-  - DOMAIN-SUFFIX,gaapacc021.com.cn
-  - DOMAIN-SUFFIX,gaapacc022.com.cn
-  - DOMAIN-SUFFIX,gaapacc023.com.cn
-  - DOMAIN-SUFFIX,gaapacc024.com.cn
-  - DOMAIN-SUFFIX,gaapacc025.com.cn
-  - DOMAIN-SUFFIX,gaapacc026.com.cn
-  - DOMAIN-SUFFIX,gaapacc027.com.cn
-  - DOMAIN-SUFFIX,gaapacc028.com.cn
-  - DOMAIN-SUFFIX,gaapacc029.com.cn
-  - DOMAIN-SUFFIX,gaapacc030.com.cn
-  - DOMAIN-SUFFIX,gaapdns.com.cn
-  - DOMAIN-SUFFIX,gaapqcloud.com.cn
-  - DOMAIN-SUFFIX,gaapqcloudbackup01.com.cn
-  - DOMAIN-SUFFIX,gaapqcloudbackup02.com.cn
-  - DOMAIN-SUFFIX,gaapqcloudbackup03.com.cn
-  - DOMAIN-SUFFIX,galileosight.cn
-  - DOMAIN-SUFFIX,galiosight.cn
-  - DOMAIN-SUFFIX,gamegocenter.cn
   - DOMAIN-SUFFIX,gamer.com.tw
-  - DOMAIN-SUFFIX,gaqcloud.cn
-  - DOMAIN-SUFFIX,gaqcloud.com.cn
-  - DOMAIN-SUFFIX,gaqcloudbackup.cn
-  - DOMAIN-SUFFIX,gaqcloudbackup.com.cn
   - DOMAIN-SUFFIX,gargoyle.tomkow.pl
   - DOMAIN-SUFFIX,gemini.google.com
   - DOMAIN-SUFFIX,gemstv.wide-stream.net
@@ -3043,7 +2913,6 @@ payload:
   - DOMAIN-SUFFIX,ggpht.cn
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,ghaasiflu.online
-  - DOMAIN-SUFFIX,gitdrone.cn
   - DOMAIN-SUFFIX,gitv.cn
   - DOMAIN-SUFFIX,gjgbdszt.cn
   - DOMAIN-SUFFIX,gjgbdszt.com.cn
@@ -3051,8 +2920,6 @@ payload:
   - DOMAIN-SUFFIX,glas.org.ua
   - DOMAIN-SUFFIX,glasamerike.net
   - DOMAIN-SUFFIX,glasdrine.cutuk.net
-  - DOMAIN-SUFFIX,globaltenpay.cn
-  - DOMAIN-SUFFIX,gmedev.cn
   - DOMAIN-SUFFIX,go-disneyworldgo.com
   - DOMAIN-SUFFIX,go.com
   - DOMAIN-SUFFIX,golos-ameriki.ru
@@ -3060,20 +2927,13 @@ payload:
   - DOMAIN-SUFFIX,gooddaychicago.com
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,gorin.jp
-  - DOMAIN-SUFFIX,goto-game.cn
-  - DOMAIN-SUFFIX,goto-game.com.cn
-  - DOMAIN-SUFFIX,goto-game.net.cn
   - DOMAIN-SUFFIX,gov.leominster.tv
-  - DOMAIN-SUFFIX,govtcloud.cn
   - DOMAIN-SUFFIX,gravitas-movies.sinclair.wurl.com
   - DOMAIN-SUFFIX,grazie.ai
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
-  - DOMAIN-SUFFIX,grouppic.cn
   - DOMAIN-SUFFIX,gsn-gameshowchannnel-1.vizio.wurl.com
   - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
   - DOMAIN-SUFFIX,gstream4.panet.co.il
-  - DOMAIN-SUFFIX,gtimg.cn
-  - DOMAIN-SUFFIX,gtimg.com.cn
   - DOMAIN-SUFFIX,gtrkchita.ru
   - DOMAIN-SUFFIX,gtv.live.cdn.bitgravity.com
   - DOMAIN-SUFFIX,gustotv-samsung-au.samsung.wurl.com
@@ -3083,7 +2943,6 @@ payload:
   - DOMAIN-SUFFIX,h-netflix.online-metrix.net
   - DOMAIN-SUFFIX,h264.io
   - DOMAIN-SUFFIX,h6le2.babahhcdn.com
-  - DOMAIN-SUFFIX,haihub.cn
   - DOMAIN-SUFFIX,haiwaikan.com
   - DOMAIN-SUFFIX,haiyan.liveyun.hoge.cn
   - DOMAIN-SUFFIX,hamada.gaki-no-tsukai.eu
@@ -3095,11 +2954,11 @@ payload:
   - DOMAIN-SUFFIX,hayabusa.dev
   - DOMAIN-SUFFIX,hayabusa.io
   - DOMAIN-SUFFIX,hayabusa.media
-  - DOMAIN-SUFFIX,hayday-game.cn
-  - DOMAIN-SUFFIX,haydaypop.cn
   - DOMAIN-SUFFIX,hbbtvlive.v3.tvp.pl
   - DOMAIN-SUFFIX,hbbtvlive3.v3.tvp.pl
   - DOMAIN-SUFFIX,hbo.com
+  - DOMAIN-SUFFIX,hbo.com.c.footprint.net
+  - DOMAIN-SUFFIX,hbo.map.fastly.net
   - DOMAIN-SUFFIX,hboasia.com
   - DOMAIN-SUFFIX,hbogeo.cust.footprint.net
   - DOMAIN-SUFFIX,hbogo.co.th
@@ -3120,11 +2979,9 @@ payload:
   - DOMAIN-SUFFIX,hd.chileservidores.cl
   - DOMAIN-SUFFIX,hd1.91kds.cn
   - DOMAIN-SUFFIX,hdserver.7starcloud.com
-  - DOMAIN-SUFFIX,helixapp.cn
   - DOMAIN-SUFFIX,hentaiverse.org
   - DOMAIN-SUFFIX,hi.hi-back.masuk.web.id
   - DOMAIN-SUFFIX,highvolume04.streampartner.nl
-  - DOMAIN-SUFFIX,himoral.com.cn
   - DOMAIN-SUFFIX,hinet.jmsooo.com
   - DOMAIN-SUFFIX,hinet.net
   - DOMAIN-SUFFIX,hithd.camsh.orsk.ru
@@ -3234,38 +3091,25 @@ payload:
   - DOMAIN-SUFFIX,iamchannel.org
   - DOMAIN-SUFFIX,ibytedtos.com
   - DOMAIN-SUFFIX,ibyteimg.com
-  - DOMAIN-SUFFIX,igcdn.cn
   - DOMAIN-SUFFIX,ign-plex.amagi.tv
   - DOMAIN-SUFFIX,ign-sportstribal.amagi.tv
-  - DOMAIN-SUFFIX,ign.com.cn
-  - DOMAIN-SUFFIX,igtm-meeting-tencent.cn
-  - DOMAIN-SUFFIX,igtm-yuanbao.cn
-  - DOMAIN-SUFFIX,ihappystudio.cn
   - DOMAIN-SUFFIX,ikomg2.s.llnwi.net
   - DOMAIN-SUFFIX,iliketot.dyndns.tv
   - DOMAIN-SUFFIX,imetyou.top
   - DOMAIN-SUFFIX,img-edgesport.samsung.wurl.com
   - DOMAIN-SUFFIX,imkan.tv
   - DOMAIN-SUFFIX,imob.dunyanews.tv
-  - DOMAIN-SUFFIX,imqq.cn
-  - DOMAIN-SUFFIX,imqq.com.cn
-  - DOMAIN-SUFFIX,imqq.net.cn
-  - DOMAIN-SUFFIX,imqq.org.cn
   - DOMAIN-SUFFIX,in.uaimacks.net.br
-  - DOMAIN-SUFFIX,incentivepower.cn
   - DOMAIN-SUFFIX,indazn.com
   - DOMAIN-SUFFIX,indaznlab.com
-  - DOMAIN-SUFFIX,industryai.com.cn
   - DOMAIN-SUFFIX,infochh.trkeurasia.ru
   - DOMAIN-SUFFIX,infochhdcdn.trkeurasia.ru
   - DOMAIN-SUFFIX,inliveserver.com
   - DOMAIN-SUFFIX,inshort-samsungindia.amagi.tv
   - DOMAIN-SUFFIX,insidevoa.com
-  - DOMAIN-SUFFIX,insightpower.cn
   - DOMAIN-SUFFIX,insighttv-samsung-canada.amagi.tv
   - DOMAIN-SUFFIX,insighttv-samsung-uk.amagi.tv
   - DOMAIN-SUFFIX,insighttv-samsungau.amagi.tv
-  - DOMAIN-SUFFIX,intlgame.cn
   - DOMAIN-SUFFIX,introuble-rakuten.amagi.tv
   - DOMAIN-SUFFIX,introuble-samsung.amagi.tv
   - DOMAIN-SUFFIX,introuble-samsungau.amagi.tv
@@ -3281,7 +3125,6 @@ payload:
   - DOMAIN-SUFFIX,ion-qubo-1.vizio.wurl.com
   - DOMAIN-SUFFIX,ios-stream.qvc.de
   - DOMAIN-SUFFIX,ip.opoja.tv
-  - DOMAIN-SUFFIX,ipanda.cn
   - DOMAIN-SUFFIX,ipanda.com.cn
   - DOMAIN-SUFFIX,ipm.oncast.me
   - DOMAIN-SUFFIX,ipstatp.com
@@ -3298,7 +3141,6 @@ payload:
   - DOMAIN-SUFFIX,iptv1.privateiptv.club
   - DOMAIN-SUFFIX,iptvdom.my1.ru
   - DOMAIN-SUFFIX,iptvtree.net
-  - DOMAIN-SUFFIX,isa0.cn
   - DOMAIN-SUFFIX,isar-tv.iptv-playoutcenter.de
   - DOMAIN-SUFFIX,isnssdk.com
   - DOMAIN-SUFFIX,istream.binarywaves.com
@@ -3323,7 +3165,6 @@ payload:
   - DOMAIN-SUFFIX,jetbrains.ai
   - DOMAIN-SUFFIX,jiangbing.cn
   - DOMAIN-SUFFIX,jiangjinlive.cbg.cn
-  - DOMAIN-SUFFIX,jiangzikanshu.cn
   - DOMAIN-SUFFIX,jk3lz82elw79-hls-live.5centscdn.com
   - DOMAIN-SUFFIX,jmc-live.ercdn.net
   - DOMAIN-SUFFIX,joeswall.com
@@ -3331,7 +3172,6 @@ payload:
   - DOMAIN-SUFFIX,joinmaidez.com
   - DOMAIN-SUFFIX,jola.live
   - DOMAIN-SUFFIX,jrtv-live.ercdn.net
-  - DOMAIN-SUFFIX,jrzk.net.cn
   - DOMAIN-SUFFIX,js-agent.newrelic.com
   - DOMAIN-SUFFIX,js1.amtb.cn
   - DOMAIN-SUFFIX,jtvnw.net
@@ -3340,12 +3180,9 @@ payload:
   - DOMAIN-SUFFIX,jukin-weatherspy-2-ca.samsung.wurl.com
   - DOMAIN-SUFFIX,jwpcdn.com
   - DOMAIN-SUFFIX,jwplayer.com
-  - DOMAIN-SUFFIX,jxemailbk.cn
-  - DOMAIN-SUFFIX,jxemailbk.com.cn
   - DOMAIN-SUFFIX,jxgz1.jilu8.cn
   - DOMAIN-SUFFIX,k3.usastreams.com
   - DOMAIN-SUFFIX,k4.usastreams.com
-  - DOMAIN-SUFFIX,kachabank.com.cn
   - DOMAIN-SUFFIX,kaixianlive.cbg.cn
   - DOMAIN-SUFFIX,kakao.co.kr
   - DOMAIN-SUFFIX,kakao.com
@@ -3372,13 +3209,9 @@ payload:
   - DOMAIN-SUFFIX,ktvu.com
   - DOMAIN-SUFFIX,kurir-tv.haste-cdn.net
   - DOMAIN-SUFFIX,kuzeykibris.tv
-  - DOMAIN-SUFFIX,kwsou.cn
-  - DOMAIN-SUFFIX,kxmz.org.cn
-  - DOMAIN-SUFFIX,l1xn.cn
   - DOMAIN-SUFFIX,l3.cloudskep.com
   - DOMAIN-SUFFIX,l5.cloudskep.com
   - DOMAIN-SUFFIX,l8.cloudskep.com
-  - DOMAIN-SUFFIX,labycore.cn
   - DOMAIN-SUFFIX,lalegultv.netmedya.net
   - DOMAIN-SUFFIX,langate.tv
   - DOMAIN-SUFFIX,latele.vedge.infomaniak.com
@@ -3396,7 +3229,6 @@ payload:
   - DOMAIN-SUFFIX,legochannel-roku.amagi.tv
   - DOMAIN-SUFFIX,legochannel-vizio.amagi.tv
   - DOMAIN-SUFFIX,lifetv.bitflip.ee
-  - DOMAIN-SUFFIX,light-cos.cn
   - DOMAIN-SUFFIX,lightning-tracesport-samsungau.amagi.tv
   - DOMAIN-SUFFIX,lightning-traceurban-samsungau.amagi.tv
   - DOMAIN-SUFFIX,limited09.todostreaming.es
@@ -3573,8 +3405,6 @@ payload:
   - DOMAIN-SUFFIX,live2.parnian.tv
   - DOMAIN-SUFFIX,live2.telvi.de
   - DOMAIN-SUFFIX,livebeta.publika.md
-  - DOMAIN-SUFFIX,livecdn1.news.cn
-  - DOMAIN-SUFFIX,livechina.cn
   - DOMAIN-SUFFIX,livefa.marjaeyattv.com
   - DOMAIN-SUFFIX,livefta.malimarcdn.com
   - DOMAIN-SUFFIX,liveko24-manminglobal3.ktcdn.co.kr
@@ -3595,7 +3425,6 @@ payload:
   - DOMAIN-SUFFIX,livetv.powerapp.com.tr
   - DOMAIN-SUFFIX,livetvsteam.com
   - DOMAIN-SUFFIX,livevideo.infomaniak.com
-  - DOMAIN-SUFFIX,lldlf.cn
   - DOMAIN-SUFFIX,llnwd.net
   - DOMAIN-SUFFIX,logx.optimizely.com
   - DOMAIN-SUFFIX,londonreal.tv
@@ -3607,8 +3436,6 @@ payload:
   - DOMAIN-SUFFIX,loop-party-1.roku.wurl.com
   - DOMAIN-SUFFIX,lova.me
   - DOMAIN-SUFFIX,ls1.serverdump.com
-  - DOMAIN-SUFFIX,ludosuperstar.cn
-  - DOMAIN-SUFFIX,ludoworld.cn
   - DOMAIN-SUFFIX,lzlive.vojs.cn
   - DOMAIN-SUFFIX,m-1.data.lt
   - DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
@@ -3620,13 +3447,10 @@ payload:
   - DOMAIN-SUFFIX,ma.anixa.tv
   - DOMAIN-SUFFIX,madnitv.vdn.dstreamone.net
   - DOMAIN-SUFFIX,magselect-stirr.amagi.tv
-  - DOMAIN-SUFFIX,mahjongai.cn
-  - DOMAIN-SUFFIX,mahjongcup.cn
   - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN-SUFFIX,makkahtv.srfms.com
   - DOMAIN-SUFFIX,manar.live
   - DOMAIN-SUFFIX,manifest.prod.boltdns.net
-  - DOMAIN-SUFFIX,map-tencent.cn
   - DOMAIN-SUFFIX,marscode.com
   - DOMAIN-SUFFIX,marvel.com
   - DOMAIN-SUFFIX,marvel10thanniversary.com
@@ -3677,22 +3501,17 @@ payload:
   - DOMAIN-SUFFIX,meridian.net
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,mewatch.sg
-  - DOMAIN-SUFFIX,mh2u.cn
   - DOMAIN-SUFFIX,mi1.wz.tv2000.it
   - DOMAIN-SUFFIX,mickey.tv
   - DOMAIN-SUFFIX,mickeycloud.com
   - DOMAIN-SUFFIX,mirtv.club
   - DOMAIN-SUFFIX,mistral.ai
   - DOMAIN-SUFFIX,mlive.lahorenews.tv
-  - DOMAIN-SUFFIX,mmbizurl.cn
-  - DOMAIN-SUFFIX,mmecimage.cn
   - DOMAIN-SUFFIX,mmm-ducktv-2-it.samsung.wurl.com
   - DOMAIN-SUFFIX,mms.ldntv.cn
   - DOMAIN-SUFFIX,mn-nl.mncdn.com
   - DOMAIN-SUFFIX,mntv.livebox.co.in
   - DOMAIN-SUFFIX,mobile-collector.newrelic.com
-  - DOMAIN-SUFFIX,moco-game.cn
-  - DOMAIN-SUFFIX,molo.cn
   - DOMAIN-SUFFIX,moov.hk
   - DOMAIN-SUFFIX,movie.xeton.dev
   - DOMAIN-SUFFIX,moviemix.samsung.wurl.com
@@ -3711,13 +3530,13 @@ payload:
   - DOMAIN-SUFFIX,msnbc.com
   - DOMAIN-SUFFIX,mst3k-localnow.amagi.tv
   - DOMAIN-SUFFIX,mst3k-redbox.amagi.tv
-  - DOMAIN-SUFFIX,mszdld.cn
   - DOMAIN-SUFFIX,mtulqxgomrllive.mediatriple.net
   - DOMAIN-SUFFIX,mtvnservices.com
   - DOMAIN-SUFFIX,mtxstr001.matrixdata.nl
   - DOMAIN-SUFFIX,mudvod.tv
   - DOMAIN-SUFFIX,muenchentv.iptv-playoutcenter.de
   - DOMAIN-SUFFIX,muscdn.com
+  - DOMAIN-SUFFIX,musemuse.cn
   - DOMAIN-SUFFIX,mushymush.tv
   - DOMAIN-SUFFIX,musical.ly
   - DOMAIN-SUFFIX,mv2.tvfrancophonie.org
@@ -3754,8 +3573,6 @@ payload:
   - DOMAIN-SUFFIX,myfoxzone.com
   - DOMAIN-SUFFIX,myhulu.com
   - DOMAIN-SUFFIX,myq2.com
-  - DOMAIN-SUFFIX,myqcloud.cn
-  - DOMAIN-SUFFIX,myqcloud.com.cn
   - DOMAIN-SUFFIX,mytime-tcl.amagi.tv
   - DOMAIN-SUFFIX,mytvsuper.com
   - DOMAIN-SUFFIX,mytvsuperlimited.hb.omtrdc.net
@@ -3805,7 +3622,6 @@ payload:
   - DOMAIN-SUFFIX,netstreaming.eu
   - DOMAIN-SUFFIX,nettvstreampaid.flashmediacast.com
   - DOMAIN-SUFFIX,nettyinternet.com
-  - DOMAIN-SUFFIX,neuroxiv.cn
   - DOMAIN-SUFFIX,newpppp.com
   - DOMAIN-SUFFIX,news-client.apple.com
   - DOMAIN-SUFFIX,news-edge.apple.com
@@ -3815,8 +3631,6 @@ payload:
   - DOMAIN-SUFFIX,newsjatt.camdvr.org
   - DOMAIN-SUFFIX,newsnowfox.com
   - DOMAIN-SUFFIX,newyorkstream.ddns.net
-  - DOMAIN-SUFFIX,nextplayground.cn
-  - DOMAIN-SUFFIX,nextplayground.com.cn
   - DOMAIN-SUFFIX,nflxext.com
   - DOMAIN-SUFFIX,nflximg.com
   - DOMAIN-SUFFIX,nflximg.net
@@ -3852,13 +3666,9 @@ payload:
   - DOMAIN-SUFFIX,nikkei.com
   - DOMAIN-SUFFIX,nikkei.jp
   - DOMAIN-SUFFIX,nimg.jp
-  - DOMAIN-SUFFIX,nintendoswitch.cn
-  - DOMAIN-SUFFIX,nintendoswitch.com.cn
   - DOMAIN-SUFFIX,nivod.tv
   - DOMAIN-SUFFIX,nivodi.tv
   - DOMAIN-SUFFIX,nivodz.com
-  - DOMAIN-SUFFIX,nktzj.cn
-  - DOMAIN-SUFFIX,nokialumia.com.cn
   - DOMAIN-SUFFIX,nomadlandmovie.ch
   - DOMAIN-SUFFIX,nosey-realnosey-1.vizio.wurl.com
   - DOMAIN-SUFFIX,notebooklm.google.com
@@ -3893,7 +3703,6 @@ payload:
   - DOMAIN-SUFFIX,ocko-live.ssl.cdn.cra.cz
   - DOMAIN-SUFFIX,ocnttv.com
   - DOMAIN-SUFFIX,ocvideo.apple.com
-  - DOMAIN-SUFFIX,oedcdn.cn
   - DOMAIN-SUFFIX,og2qd3aal7an-hls-live.5centscdn.com
   - DOMAIN-SUFFIX,ohhhh.org
   - DOMAIN-SUFFIX,oj7lng29dg82-hls-live.5centscdn.com
@@ -3912,9 +3721,6 @@ payload:
   - DOMAIN-SUFFIX,onlinetv.ktrk.kg
   - DOMAIN-SUFFIX,onntv.vantrix.tv
   - DOMAIN-SUFFIX,open-cdn.lanet.tv
-  - DOMAIN-SUFFIX,opendatacenter.cn
-  - DOMAIN-SUFFIX,oracle-on-qcloud.cn
-  - DOMAIN-SUFFIX,oracle-tencent.net.cn
   - DOMAIN-SUFFIX,origin-http-delivery.isilive.ca
   - DOMAIN-SUFFIX,originalhulu.com
   - DOMAIN-SUFFIX,orlandohurricane.com
@@ -3939,7 +3745,6 @@ payload:
   - DOMAIN-SUFFIX,pac12-roku-us.amagi.tv
   - DOMAIN-SUFFIX,pac12-samsungus.amagi.tv
   - DOMAIN-SUFFIX,pac12-sportstribal.amagi.tv
-  - DOMAIN-SUFFIX,pagedoo.cn
   - DOMAIN-SUFFIX,painelvj.com.br
   - DOMAIN-SUFFIX,palestiniantv.origin.technostreaming.net
   - DOMAIN-SUFFIX,pandora.com
@@ -3966,10 +3771,6 @@ payload:
   - DOMAIN-SUFFIX,pershij-dlovij-hls1.cosmonova.net.ua
   - DOMAIN-SUFFIX,pershij-dlovij-hls3.cosmonova.net.ua
   - DOMAIN-SUFFIX,persik.by
-  - DOMAIN-SUFFIX,pfif.cn
-  - DOMAIN-SUFFIX,pfif.com.cn
-  - DOMAIN-SUFFIX,pfif.net.cn
-  - DOMAIN-SUFFIX,pgdt.gtimg.cn
   - DOMAIN-SUFFIX,phncdn.com
   - DOMAIN-SUFFIX,phprcdn.com
   - DOMAIN-SUFFIX,pili-live-hdl.qhmywl.com
@@ -3991,13 +3792,11 @@ payload:
   - DOMAIN-SUFFIX,pluto-live.plutotv.net
   - DOMAIN-SUFFIX,pluto.tv
   - DOMAIN-SUFFIX,pocketwatch-vizio.amagi.tv
-  - DOMAIN-SUFFIX,polarismesh.cn
   - DOMAIN-SUFFIX,poloemby.xyz
   - DOMAIN-SUFFIX,polygon.com
   - DOMAIN-SUFFIX,pornemby.club
   - DOMAIN-SUFFIX,pornhub.com
   - DOMAIN-SUFFIX,pornhubpremium.com
-  - DOMAIN-SUFFIX,potops.cn
   - DOMAIN-SUFFIX,potplayer.tv
   - DOMAIN-SUFFIX,pplusstatic.com
   - DOMAIN-SUFFIX,ppstream.cn
@@ -4013,44 +3812,17 @@ payload:
   - DOMAIN-SUFFIX,primevideo.info
   - DOMAIN-SUFFIX,primevideo.org
   - DOMAIN-SUFFIX,primevideo.tv
-  - DOMAIN-SUFFIX,private-tech.cn
   - DOMAIN-SUFFIX,prod.hjholdings.tv
-  - DOMAIN-SUFFIX,projectserval.cn
   - DOMAIN-SUFFIX,pronstore.com
   - DOMAIN-SUFFIX,proxy.bihnet.net
   - DOMAIN-SUFFIX,pscdn.co
-  - DOMAIN-SUFFIX,pubgno1.cn
   - DOMAIN-SUFFIX,public.streaming.matur-tv.ru
   - DOMAIN-SUFFIX,pull.leshantangjt.com
   - DOMAIN-SUFFIX,pursuitup.samsung.wurl.com
   - DOMAIN-SUFFIX,pv-cdn.net
   - DOMAIN-SUFFIX,q13.com
   - DOMAIN-SUFFIX,q13fox.com
-  - DOMAIN-SUFFIX,qbanking.cn
-  - DOMAIN-SUFFIX,qcdne.cn
-  - DOMAIN-SUFFIX,qcdntest.cn
-  - DOMAIN-SUFFIX,qcdntest.com.cn
-  - DOMAIN-SUFFIX,qclivecdn.cn
-  - DOMAIN-SUFFIX,qcloudcdn.cn
-  - DOMAIN-SUFFIX,qcloudcdn.com.cn
-  - DOMAIN-SUFFIX,qcloudcdntest.cn
-  - DOMAIN-SUFFIX,qcloudcjgj.cn
-  - DOMAIN-SUFFIX,qcloudcos.cn
-  - DOMAIN-SUFFIX,qcloudcos.com.cn
-  - DOMAIN-SUFFIX,qcloudmailbk.cn
-  - DOMAIN-SUFFIX,qcloudmailbk.com.cn
-  - DOMAIN-SUFFIX,qcloudwzgj.cn
-  - DOMAIN-SUFFIX,qcloudzygj.cn
-  - DOMAIN-SUFFIX,qdstsy.cn
-  - DOMAIN-SUFFIX,qgodb.cn
-  - DOMAIN-SUFFIX,qgodb.com.cn
-  - DOMAIN-SUFFIX,qidian.cn
   - DOMAIN-SUFFIX,qiyi.cn
-  - DOMAIN-SUFFIX,qlivecdn.cn
-  - DOMAIN-SUFFIX,qlivertc.cn
-  - DOMAIN-SUFFIX,qlivertc2.cn
-  - DOMAIN-SUFFIX,qlivewebrtc.cn
-  - DOMAIN-SUFFIX,qlivewebrtc2.cn
   - DOMAIN-SUFFIX,qobuz.at
   - DOMAIN-SUFFIX,qobuz.be
   - DOMAIN-SUFFIX,qobuz.biz
@@ -4075,19 +3847,9 @@ payload:
   - DOMAIN-SUFFIX,qobuz.se
   - DOMAIN-SUFFIX,qobuz.tv
   - DOMAIN-SUFFIX,qobuz.us
-  - DOMAIN-SUFFIX,qpimg.cn
-  - DOMAIN-SUFFIX,qq.com.cn
-  - DOMAIN-SUFFIX,qqexpert.cn
-  - DOMAIN-SUFFIX,qqhangjia.cn
-  - DOMAIN-SUFFIX,qqimage.cn
-  - DOMAIN-SUFFIX,qqimage.com.cn
-  - DOMAIN-SUFFIX,qqimage.net.cn
-  - DOMAIN-SUFFIX,qqmra.cn
   - DOMAIN-SUFFIX,quobuz.com
   - DOMAIN-SUFFIX,quobuz.fr
   - DOMAIN-SUFFIX,qxlmlive.cbg.cn
-  - DOMAIN-SUFFIX,qymdb.cn
-  - DOMAIN-SUFFIX,qymdb.com.cn
   - DOMAIN-SUFFIX,racked.com
   - DOMAIN-SUFFIX,radio-live-mg.rtr-vesti.ru
   - DOMAIN-SUFFIX,radiyoyacuvoa.com
@@ -4098,14 +3860,8 @@ payload:
   - DOMAIN-SUFFIX,rakuten-euronews-3-it.samsung.wurl.com
   - DOMAIN-SUFFIX,rakuten-euronews-4-es.samsung.wurl.com
   - DOMAIN-SUFFIX,rakuten-euronews-5-de.samsung.wurl.com
-  - DOMAIN-SUFFIX,raykite.cn
-  - DOMAIN-SUFFIX,raykite.com.cn
-  - DOMAIN-SUFFIX,raynext.cn
-  - DOMAIN-SUFFIX,raynext.com.cn
   - DOMAIN-SUFFIX,rbc.directradios.com
-  - DOMAIN-SUFFIX,rbxcdn.cn
   - DOMAIN-SUFFIX,rds3.desdeparaguay.net
-  - DOMAIN-SUFFIX,reachentrophy.cn
   - DOMAIN-SUFFIX,readymedia.moderntv.cloud
   - DOMAIN-SUFFIX,realamericanstories.com
   - DOMAIN-SUFFIX,realamericanstories.info
@@ -4126,11 +3882,7 @@ payload:
   - DOMAIN-SUFFIX,reuters-reutersnow-1.roku.wurl.com
   - DOMAIN-SUFFIX,rfo.iptv-playoutcenter.de
   - DOMAIN-SUFFIX,rialto-rialto-samsungaustralia.amagi.tv
-  - DOMAIN-SUFFIX,ricenter.cn
   - DOMAIN-SUFFIX,rifftrax.samsung.wurl.com
-  - DOMAIN-SUFFIX,roblox.cn
-  - DOMAIN-SUFFIX,ronghe-edu.org.cn
-  - DOMAIN-SUFFIX,rongheedu.org.cn
   - DOMAIN-SUFFIX,rpg.pic-imges.com
   - DOMAIN-SUFFIX,rpn1.bozztv.com
   - DOMAIN-SUFFIX,rprimelab.com
@@ -4167,18 +3919,15 @@ payload:
   - DOMAIN-SUFFIX,rtmtv-samsung.samsung.wurl.com
   - DOMAIN-SUFFIX,rtvarberia4.flashmediacast.com
   - DOMAIN-SUFFIX,rtvmir.info
-  - DOMAIN-SUFFIX,rtx.com.cn
   - DOMAIN-SUFFIX,runtimebrazil-samsungbrazil.amagi.tv
   - DOMAIN-SUFFIX,runtimemx-samsungmx.amagi.tv
   - DOMAIN-SUFFIX,rusevertv.ru
   - DOMAIN-SUFFIX,rush-redbox.amagi.tv
   - DOMAIN-SUFFIX,rutv.gcdn.co
-  - DOMAIN-SUFFIX,ruyh.cn
   - DOMAIN-SUFFIX,s-nbcnews.com
   - DOMAIN-SUFFIX,s.yimg.jp
   - DOMAIN-SUFFIX,s01.vpis.io
   - DOMAIN-SUFFIX,s02.diazol.hu
-  - DOMAIN-SUFFIX,s0ox.cn
   - DOMAIN-SUFFIX,s1.abntelevision.com
   - DOMAIN-SUFFIX,s1.cystream.net
   - DOMAIN-SUFFIX,s1.media-planet.sk
@@ -4189,7 +3938,6 @@ payload:
   - DOMAIN-SUFFIX,s5.alfaomega.tv
   - DOMAIN-SUFFIX,s5.mexside.net
   - DOMAIN-SUFFIX,s8.stweb.tv
-  - DOMAIN-SUFFIX,safejmp.cn
   - DOMAIN-SUFFIX,salto-streams.nl
   - DOMAIN-SUFFIX,samsung-au.ott-channels.stingray.com
   - DOMAIN-SUFFIX,samsung-mx.ott-channels.stingray.com
@@ -4201,13 +3949,8 @@ payload:
   - DOMAIN-SUFFIX,sb.top-ix.org
   - DOMAIN-SUFFIX,sbnation.com
   - DOMAIN-SUFFIX,sc.id-tv.kz
-  - DOMAIN-SUFFIX,sccreator.cn
   - DOMAIN-SUFFIX,scdn.co
-  - DOMAIN-SUFFIX,scescdn.cn
-  - DOMAIN-SUFFIX,scid.cn
-  - DOMAIN-SUFFIX,scl0.cn
   - DOMAIN-SUFFIX,screens-lab.jp
-  - DOMAIN-SUFFIX,scsentry.cn
   - DOMAIN-SUFFIX,sdm.telewebion.com
   - DOMAIN-SUFFIX,sdw.telewebion.com
   - DOMAIN-SUFFIX,seattlespheres.com
@@ -4223,23 +3966,19 @@ payload:
   - DOMAIN-SUFFIX,server1.oklanet.cl
   - DOMAIN-SUFFIX,server12.videostreaming.net
   - DOMAIN-SUFFIX,server3.prostudionetwork.com
-  - DOMAIN-SUFFIX,serverlesscloud.cn
   - DOMAIN-SUFFIX,servers.amelbasoluciones.co
   - DOMAIN-SUFFIX,servers.xeton.dev
   - DOMAIN-SUFFIX,service-stitcher.clusters.pluto.tv
   - DOMAIN-SUFFIX,seswa.bonce.tv
-  - DOMAIN-SUFFIX,sfapower.cn
   - DOMAIN-SUFFIX,sgpstatp.com
-  - DOMAIN-SUFFIX,sgurl.cn
+  - DOMAIN-SUFFIX,sgsnssdk.com
   - DOMAIN-SUFFIX,sho.com
   - DOMAIN-SUFFIX,shopdisney.com
   - DOMAIN-SUFFIX,shops-disney.com
   - DOMAIN-SUFFIX,shopspeedtv.com
   - DOMAIN-SUFFIX,shoutfactory-redbox.amagi.tv
   - DOMAIN-SUFFIX,showtime.com
-  - DOMAIN-SUFFIX,shurl.cn
   - DOMAIN-SUFFIX,siloh.pluto.tv
-  - DOMAIN-SUFFIX,silvertek.cn
   - DOMAIN-SUFFIX,simg.jp
   - DOMAIN-SUFFIX,simultv.s.llnwi.net
   - DOMAIN-SUFFIX,sitv.ru
@@ -4268,7 +4007,6 @@ payload:
   - DOMAIN-SUFFIX,soundcloud.app.goo.gl
   - DOMAIN-SUFFIX,soundcloud.com
   - DOMAIN-SUFFIX,soundcloudmail.com
-  - DOMAIN-SUFFIX,source07.v.news.cn
   - DOMAIN-SUFFIX,spacetv.in
   - DOMAIN-SUFFIX,spaindisney.com
   - DOMAIN-SUFFIX,sparktv-samsunguk.amagi.tv
@@ -4295,10 +4033,7 @@ payload:
   - DOMAIN-SUFFIX,spotilocal.com
   - DOMAIN-SUFFIX,spotlight-redbox.amagi.tv
   - DOMAIN-SUFFIX,spotlight-vizio.amagi.tv
-  - DOMAIN-SUFFIX,squadbusters-game.cn
-  - DOMAIN-SUFFIX,squadbustersgame.cn
   - DOMAIN-SUFFIX,sradio.ipradio.rs
-  - DOMAIN-SUFFIX,srmkp.cn
   - DOMAIN-SUFFIX,srv.panelcast.net
   - DOMAIN-SUFFIX,srv.viiideo.gr
   - DOMAIN-SUFFIX,srv1.adriatelekom.com
@@ -4314,7 +4049,6 @@ payload:
   - DOMAIN-SUFFIX,ss3.domint.net
   - DOMAIN-SUFFIX,ss6.domint.net
   - DOMAIN-SUFFIX,ss8.domint.net
-  - DOMAIN-SUFFIX,ssibility-union.com.cn
   - DOMAIN-SUFFIX,ssl4.radyotvonline.com
   - DOMAIN-SUFFIX,ssttvv1.6zxr.xyz
   - DOMAIN-SUFFIX,st2.worldkast.com
@@ -4501,28 +4235,13 @@ payload:
   - DOMAIN-SUFFIX,studiocam-oe3.mdn.ors.at
   - DOMAIN-SUFFIX,stv.janus.cl
   - DOMAIN-SUFFIX,suike.cn
-  - DOMAIN-SUFFIX,supercellcommunity.cn
-  - DOMAIN-SUFFIX,supercellsupport.cn
-  - DOMAIN-SUFFIX,superfix.cn
-  - DOMAIN-SUFFIX,superfix.com.cn
   - DOMAIN-SUFFIX,sv72.ecuaradiotv.net
   - DOMAIN-SUFFIX,svc-lvanvato-cxtv-whio.cmgvideo.com
   - DOMAIN-SUFFIX,svc-lvanvato-cxtv-wpxi.cmgvideo.com
-  - DOMAIN-SUFFIX,swd7.cn
   - DOMAIN-SUFFIX,syfy.com
   - DOMAIN-SUFFIX,symc-cdn.violin.co.th
-  - DOMAIN-SUFFIX,syurl.cn
   - DOMAIN-SUFFIX,szlive.grtn.cn
-  - DOMAIN-SUFFIX,szyxlx.cn
   - DOMAIN-SUFFIX,t2.tvmak.com
-  - DOMAIN-SUFFIX,tadsim.cn
-  - DOMAIN-SUFFIX,tailuosi.cn
-  - DOMAIN-SUFFIX,tairos.ac.cn
-  - DOMAIN-SUFFIX,tanlive.cn
-  - DOMAIN-SUFFIX,tapd-devops.cn
-  - DOMAIN-SUFFIX,tapd-private.cn
-  - DOMAIN-SUFFIX,tapd.cn
-  - DOMAIN-SUFFIX,tapd.com.cn
   - DOMAIN-SUFFIX,tastemade-de-samsung.amagi.tv
   - DOMAIN-SUFFIX,tastemade-es8intl-roku.amagi.tv
   - DOMAIN-SUFFIX,tastemade-gb.samsung.wurl.com
@@ -4531,270 +4250,21 @@ payload:
   - DOMAIN-SUFFIX,tastemadeintaus-smindia.amagi.tv
   - DOMAIN-SUFFIX,tastemadetravel-vizio.amagi.tv
   - DOMAIN-SUFFIX,tbs.mov3.co
-  - DOMAIN-SUFFIX,tcbautomation.cn
-  - DOMAIN-SUFFIX,tcbe.cn
-  - DOMAIN-SUFFIX,tcbqcloud.cn
-  - DOMAIN-SUFFIX,tcbqcloud.com.cn
-  - DOMAIN-SUFFIX,tcdndl1.cn
-  - DOMAIN-SUFFIX,tcdndl2.cn
-  - DOMAIN-SUFFIX,tcdndl3.cn
-  - DOMAIN-SUFFIX,tcdndl4.cn
-  - DOMAIN-SUFFIX,tcdnstc1.cn
-  - DOMAIN-SUFFIX,tcdnstc2.cn
-  - DOMAIN-SUFFIX,tcdnstc3.cn
-  - DOMAIN-SUFFIX,tcdnstc4.cn
-  - DOMAIN-SUFFIX,tcdnvod1.cn
-  - DOMAIN-SUFFIX,tcdnvod2.cn
-  - DOMAIN-SUFFIX,tcdnvod3.cn
-  - DOMAIN-SUFFIX,tcdnvod4.cn
-  - DOMAIN-SUFFIX,tcdnx1.cn
-  - DOMAIN-SUFFIX,tcdnx2.cn
-  - DOMAIN-SUFFIX,tcedshare.cn
-  - DOMAIN-SUFFIX,tcedshare.com.cn
-  - DOMAIN-SUFFIX,tcimage.cn
-  - DOMAIN-SUFFIX,tcloudbaseappbp.cn
-  - DOMAIN-SUFFIX,tcloudbaseappbp.com.cn
-  - DOMAIN-SUFFIX,tcloudlive.cn
   - DOMAIN-SUFFIX,tdameritrade-distro.amagi.tv
   - DOMAIN-SUFFIX,tdameritrade-vizio.amagi.tv
-  - DOMAIN-SUFFIX,tdnsdl1.cn
-  - DOMAIN-SUFFIX,tdnsdl1.com.cn
-  - DOMAIN-SUFFIX,tdnsdl2.cn
-  - DOMAIN-SUFFIX,tdnsdl2.com.cn
-  - DOMAIN-SUFFIX,tdnsdl3.cn
-  - DOMAIN-SUFFIX,tdnsdl3.com.cn
-  - DOMAIN-SUFFIX,tdnsdl4.cn
-  - DOMAIN-SUFFIX,tdnsdl4.com.cn
-  - DOMAIN-SUFFIX,tdnsdl5.cn
-  - DOMAIN-SUFFIX,tdnsdl5.com.cn
-  - DOMAIN-SUFFIX,tdnsdp1.cn
-  - DOMAIN-SUFFIX,tdnsdp1.com.cn
-  - DOMAIN-SUFFIX,tdnsdp2.cn
-  - DOMAIN-SUFFIX,tdnsdp2.com.cn
-  - DOMAIN-SUFFIX,tdnsdp3.cn
-  - DOMAIN-SUFFIX,tdnsdp3.com.cn
-  - DOMAIN-SUFFIX,tdnsdp4.cn
-  - DOMAIN-SUFFIX,tdnsdp4.com.cn
-  - DOMAIN-SUFFIX,tdnsdp5.cn
-  - DOMAIN-SUFFIX,tdnsdp5.com.cn
-  - DOMAIN-SUFFIX,tdnslive1.cn
-  - DOMAIN-SUFFIX,tdnslive1.com.cn
-  - DOMAIN-SUFFIX,tdnslive2.cn
-  - DOMAIN-SUFFIX,tdnslive2.com.cn
-  - DOMAIN-SUFFIX,tdnslive3.cn
-  - DOMAIN-SUFFIX,tdnslive3.com.cn
-  - DOMAIN-SUFFIX,tdnslive4.cn
-  - DOMAIN-SUFFIX,tdnslive4.com.cn
-  - DOMAIN-SUFFIX,tdnslive5.cn
-  - DOMAIN-SUFFIX,tdnslive5.com.cn
-  - DOMAIN-SUFFIX,tdnssp1.cn
-  - DOMAIN-SUFFIX,tdnssp1.com.cn
-  - DOMAIN-SUFFIX,tdnssp2.cn
-  - DOMAIN-SUFFIX,tdnssp2.com.cn
-  - DOMAIN-SUFFIX,tdnssp3.cn
-  - DOMAIN-SUFFIX,tdnssp3.com.cn
-  - DOMAIN-SUFFIX,tdnssp4.cn
-  - DOMAIN-SUFFIX,tdnssp4.com.cn
-  - DOMAIN-SUFFIX,tdnssp5.cn
-  - DOMAIN-SUFFIX,tdnssp5.com.cn
-  - DOMAIN-SUFFIX,tdnsstic1.cn
-  - DOMAIN-SUFFIX,tdnsstic1.com.cn
-  - DOMAIN-SUFFIX,tdnsstic2.cn
-  - DOMAIN-SUFFIX,tdnsstic2.com.cn
-  - DOMAIN-SUFFIX,tdnsstic3.cn
-  - DOMAIN-SUFFIX,tdnsstic3.com.cn
-  - DOMAIN-SUFFIX,tdnsstic4.cn
-  - DOMAIN-SUFFIX,tdnsstic4.com.cn
-  - DOMAIN-SUFFIX,tdnsstic5.cn
-  - DOMAIN-SUFFIX,tdnsstic5.com.cn
-  - DOMAIN-SUFFIX,tdnsvod1.cn
-  - DOMAIN-SUFFIX,tdnsvod1.com.cn
-  - DOMAIN-SUFFIX,tdnsvod2.cn
-  - DOMAIN-SUFFIX,tdnsvod2.com.cn
-  - DOMAIN-SUFFIX,tdnsvod3.cn
-  - DOMAIN-SUFFIX,tdnsvod3.com.cn
-  - DOMAIN-SUFFIX,tdnsvod4.cn
-  - DOMAIN-SUFFIX,tdnsvod4.com.cn
-  - DOMAIN-SUFFIX,tdnsvod5.cn
-  - DOMAIN-SUFFIX,tdnsvod5.com.cn
   - DOMAIN-SUFFIX,teenchoice.com
   - DOMAIN-SUFFIX,teledifusion.tv
   - DOMAIN-SUFFIX,teledunet.com
   - DOMAIN-SUFFIX,telemundo.com
-  - DOMAIN-SUFFIX,tencent-cloud.cn
-  - DOMAIN-SUFFIX,tencent.cn
-  - DOMAIN-SUFFIX,tencent.com.cn
-  - DOMAIN-SUFFIX,tencent.net.cn
-  - DOMAIN-SUFFIX,tencentads.cn
-  - DOMAIN-SUFFIX,tencentapigw.cn
-  - DOMAIN-SUFFIX,tencentapigw.com.cn
-  - DOMAIN-SUFFIX,tencentart.cn
-  - DOMAIN-SUFFIX,tencentbh.cn
-  - DOMAIN-SUFFIX,tencentbh.com.cn
-  - DOMAIN-SUFFIX,tencentcdb.cn
-  - DOMAIN-SUFFIX,tencentcdb.com.cn
-  - DOMAIN-SUFFIX,tencentcds.cn
-  - DOMAIN-SUFFIX,tencentcds.com.cn
-  - DOMAIN-SUFFIX,tencentcfs.cn
-  - DOMAIN-SUFFIX,tencentcfs.com.cn
-  - DOMAIN-SUFFIX,tencentci.cn
-  - DOMAIN-SUFFIX,tencentci.com.cn
-  - DOMAIN-SUFFIX,tencentciam.cn
-  - DOMAIN-SUFFIX,tencentciam.com.cn
-  - DOMAIN-SUFFIX,tencentclb.cn
-  - DOMAIN-SUFFIX,tencentclb.com.cn
-  - DOMAIN-SUFFIX,tencentclb.net.cn
-  - DOMAIN-SUFFIX,tencentcloudapi.cn
-  - DOMAIN-SUFFIX,tencentcloudapi.com.cn
-  - DOMAIN-SUFFIX,tencentcloudapp.cn
-  - DOMAIN-SUFFIX,tencentcloudapp.com.cn
-  - DOMAIN-SUFFIX,tencentcloudbase.cn
-  - DOMAIN-SUFFIX,tencentcloudcore.cn
-  - DOMAIN-SUFFIX,tencentcloudga001.cn
-  - DOMAIN-SUFFIX,tencentcloudga001.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga002.cn
-  - DOMAIN-SUFFIX,tencentcloudga002.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga003.cn
-  - DOMAIN-SUFFIX,tencentcloudga003.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga004.cn
-  - DOMAIN-SUFFIX,tencentcloudga004.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga005.cn
-  - DOMAIN-SUFFIX,tencentcloudga005.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga006.cn
-  - DOMAIN-SUFFIX,tencentcloudga006.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga007.cn
-  - DOMAIN-SUFFIX,tencentcloudga007.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga008.cn
-  - DOMAIN-SUFFIX,tencentcloudga008.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga009.cn
-  - DOMAIN-SUFFIX,tencentcloudga009.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga010.cn
-  - DOMAIN-SUFFIX,tencentcloudga010.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga011.cn
-  - DOMAIN-SUFFIX,tencentcloudga011.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga012.cn
-  - DOMAIN-SUFFIX,tencentcloudga012.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga013.cn
-  - DOMAIN-SUFFIX,tencentcloudga013.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga014.cn
-  - DOMAIN-SUFFIX,tencentcloudga014.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga015.cn
-  - DOMAIN-SUFFIX,tencentcloudga015.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga016.cn
-  - DOMAIN-SUFFIX,tencentcloudga016.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga017.cn
-  - DOMAIN-SUFFIX,tencentcloudga017.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga018.cn
-  - DOMAIN-SUFFIX,tencentcloudga018.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga019.cn
-  - DOMAIN-SUFFIX,tencentcloudga019.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga020.cn
-  - DOMAIN-SUFFIX,tencentcloudga020.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga021.cn
-  - DOMAIN-SUFFIX,tencentcloudga021.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga022.cn
-  - DOMAIN-SUFFIX,tencentcloudga022.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga023.cn
-  - DOMAIN-SUFFIX,tencentcloudga023.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga024.cn
-  - DOMAIN-SUFFIX,tencentcloudga024.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga025.cn
-  - DOMAIN-SUFFIX,tencentcloudga025.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga026.cn
-  - DOMAIN-SUFFIX,tencentcloudga026.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga027.cn
-  - DOMAIN-SUFFIX,tencentcloudga027.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga028.cn
-  - DOMAIN-SUFFIX,tencentcloudga028.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga029.cn
-  - DOMAIN-SUFFIX,tencentcloudga029.com.cn
-  - DOMAIN-SUFFIX,tencentcloudga030.cn
-  - DOMAIN-SUFFIX,tencentcloudga030.com.cn
-  - DOMAIN-SUFFIX,tencentcloudlive.cn
-  - DOMAIN-SUFFIX,tencentcloudmq.cn
-  - DOMAIN-SUFFIX,tencentcloudsso.cn
-  - DOMAIN-SUFFIX,tencentcls.cn
-  - DOMAIN-SUFFIX,tencentcode.cn
-  - DOMAIN-SUFFIX,tencentcos.cn
-  - DOMAIN-SUFFIX,tencentcos.com.cn
-  - DOMAIN-SUFFIX,tencentcs.cn
-  - DOMAIN-SUFFIX,tencentcs.com.cn
-  - DOMAIN-SUFFIX,tencentdayu.cn
-  - DOMAIN-SUFFIX,tencentdb.cn
-  - DOMAIN-SUFFIX,tencentdb.com.cn
-  - DOMAIN-SUFFIX,tencentddos.cn
-  - DOMAIN-SUFFIX,tencentelasticsearch.cn
-  - DOMAIN-SUFFIX,tencentelasticsearch.com.cn
-  - DOMAIN-SUFFIX,tencentes.cn
-  - DOMAIN-SUFFIX,tencentes.com.cn
-  - DOMAIN-SUFFIX,tencentexpert.cn
-  - DOMAIN-SUFFIX,tencentgoosefs.cn
-  - DOMAIN-SUFFIX,tencenthangjia.cn
-  - DOMAIN-SUFFIX,tencenthttpdns.cn
-  - DOMAIN-SUFFIX,tencenticp.cn
-  - DOMAIN-SUFFIX,tencenticp.com.cn
-  - DOMAIN-SUFFIX,tencentidentity.cn
-  - DOMAIN-SUFFIX,tencentidentity.com.cn
-  - DOMAIN-SUFFIX,tencentimage.cn
-  - DOMAIN-SUFFIX,tencentimage.com.cn
-  - DOMAIN-SUFFIX,tencentimage.net.cn
-  - DOMAIN-SUFFIX,tencentiss.cn
-  - DOMAIN-SUFFIX,tencentiss.com.cn
-  - DOMAIN-SUFFIX,tencentivc.cn
-  - DOMAIN-SUFFIX,tencentlab.cn
-  - DOMAIN-SUFFIX,tencentmdb.cn
-  - DOMAIN-SUFFIX,tencentmdb.com.cn
-  - DOMAIN-SUFFIX,tencentmfa.cn
-  - DOMAIN-SUFFIX,tencentmfa.com.cn
-  - DOMAIN-SUFFIX,tencentntp.cn
-  - DOMAIN-SUFFIX,tencentntp.com.cn
-  - DOMAIN-SUFFIX,tencentrce.cn
-  - DOMAIN-SUFFIX,tencentrce.com.cn
-  - DOMAIN-SUFFIX,tencentrcpcsdk.cn
-  - DOMAIN-SUFFIX,tencentrcpcsdk.com.cn
-  - DOMAIN-SUFFIX,tencentscf.cn
-  - DOMAIN-SUFFIX,tencentscf.com.cn
-  - DOMAIN-SUFFIX,tencentsecsdk.cn
-  - DOMAIN-SUFFIX,tencentsecsdk.com.cn
-  - DOMAIN-SUFFIX,tencentserverless.cn
-  - DOMAIN-SUFFIX,tencentsmh.cn
-  - DOMAIN-SUFFIX,tencentsmh.com.cn
-  - DOMAIN-SUFFIX,tencentsmhcname.cn
-  - DOMAIN-SUFFIX,tencentsmhcname.com.cn
-  - DOMAIN-SUFFIX,tencentsmhuc.cn
-  - DOMAIN-SUFFIX,tencentsmhuc.com.cn
-  - DOMAIN-SUFFIX,tencenttcr.cn
-  - DOMAIN-SUFFIX,tencenttcr.com.cn
-  - DOMAIN-SUFFIX,tencenttdmq.cn
-  - DOMAIN-SUFFIX,tencenttdmq.com.cn
-  - DOMAIN-SUFFIX,tencenttymaas.cn
-  - DOMAIN-SUFFIX,tencenttymaas.com.cn
-  - DOMAIN-SUFFIX,tencentuc.cn
-  - DOMAIN-SUFFIX,tencentvpc.cn
-  - DOMAIN-SUFFIX,tencentvpc.com.cn
-  - DOMAIN-SUFFIX,tencentwf.cn
-  - DOMAIN-SUFFIX,tencentwf.com.cn
-  - DOMAIN-SUFFIX,tencentwsd.cn
-  - DOMAIN-SUFFIX,tendbcluster.cn
-  - DOMAIN-SUFFIX,tendis.cn
-  - DOMAIN-SUFFIX,tengjia.net.cn
-  - DOMAIN-SUFFIX,tengmed.cn
   - DOMAIN-SUFFIX,tennischannel-int-samsunguk.amagi.tv
   - DOMAIN-SUFFIX,tennischannel-intl-samsung-uk.amagi.tv
-  - DOMAIN-SUFFIX,tenpayglobal.com.cn
-  - DOMAIN-SUFFIX,territorypower.cn
-  - DOMAIN-SUFFIX,testjrzk.net.cn
-  - DOMAIN-SUFFIX,testmeet.cn
   - DOMAIN-SUFFIX,testonfox.com
-  - DOMAIN-SUFFIX,texasholdemcup.cn
   - DOMAIN-SUFFIX,thaipbs-live.cdn.byteark.com
   - DOMAIN-SUFFIX,thaipbs-ujxrch.cdn.byteark.com
   - DOMAIN-SUFFIX,theclasshroom.com
-  - DOMAIN-SUFFIX,thecss.cn
   - DOMAIN-SUFFIX,thecwvideo.com
   - DOMAIN-SUFFIX,thefoxnation.com
   - DOMAIN-SUFFIX,thegeorgiascene.com
-  - DOMAIN-SUFFIX,thegreatwallpro.cn
   - DOMAIN-SUFFIX,thehulubraintrust.com
   - DOMAIN-SUFFIX,themarvelexperiencetour.com
   - DOMAIN-SUFFIX,theplatform.com
@@ -4807,114 +4277,52 @@ payload:
   - DOMAIN-SUFFIX,ti-samsung-ca.samsung.wurl.com
   - DOMAIN-SUFFIX,tidal.com
   - DOMAIN-SUFFIX,tidalhifi.com
+  - DOMAIN-SUFFIX,tiktok-usts.net
   - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tiktok.in
   - DOMAIN-SUFFIX,tiktok.us
+  - DOMAIN-SUFFIX,tiktokcdn-eu.com
+  - DOMAIN-SUFFIX,tiktokcdn-eu.net
+  - DOMAIN-SUFFIX,tiktokcdn-in.com
   - DOMAIN-SUFFIX,tiktokcdn-us.com
   - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,tiktokglobalshop.com
+  - DOMAIN-SUFFIX,tiktokglobalshopv.com
   - DOMAIN-SUFFIX,tiktokmusic.app
+  - DOMAIN-SUFFIX,tiktokshop.com
+  - DOMAIN-SUFFIX,tiktokstaticb.com
   - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-SUFFIX,tiktokv.eu
   - DOMAIN-SUFFIX,tiktokv.us
-  - DOMAIN-SUFFIX,timatrix.com.cn
+  - DOMAIN-SUFFIX,tiktokw.us
   - DOMAIN-SUFFIX,timeline-samsung-uk.amagi.tv
   - DOMAIN-SUFFIX,timestalks.com
   - DOMAIN-SUFFIX,tiquiciatv.com
-  - DOMAIN-SUFFIX,tlinkaccess.cn
-  - DOMAIN-SUFFIX,tlinkaccess2.cn
-  - DOMAIN-SUFFIX,tliveapi.cn
-  - DOMAIN-SUFFIX,tliveapi2.cn
-  - DOMAIN-SUFFIX,tliveapp.cn
-  - DOMAIN-SUFFIX,tliveauth.cn
-  - DOMAIN-SUFFIX,tliveauth2.cn
-  - DOMAIN-SUFFIX,tlivecdn.cn
-  - DOMAIN-SUFFIX,tlivecdn.com.cn
-  - DOMAIN-SUFFIX,tlivecdnv1.cn
-  - DOMAIN-SUFFIX,tlivecdnv2.cn
-  - DOMAIN-SUFFIX,tlivecdnv3.cn
-  - DOMAIN-SUFFIX,tlivecdnv4.cn
-  - DOMAIN-SUFFIX,tlivecontroller.cn
-  - DOMAIN-SUFFIX,tlivecontroller2.cn
-  - DOMAIN-SUFFIX,tlivedal.cn
-  - DOMAIN-SUFFIX,tlivedal2.cn
-  - DOMAIN-SUFFIX,tlivedispatch.cn
-  - DOMAIN-SUFFIX,tlivedispatch2.cn
-  - DOMAIN-SUFFIX,tlivedns.cn
-  - DOMAIN-SUFFIX,tlivedns2.cn
-  - DOMAIN-SUFFIX,tlivednsv1.cn
-  - DOMAIN-SUFFIX,tlivegslb.cn
-  - DOMAIN-SUFFIX,tliveigtm.cn
-  - DOMAIN-SUFFIX,tliveigtm2.cn
-  - DOMAIN-SUFFIX,tliveigtm3.cn
-  - DOMAIN-SUFFIX,tlivemcdn.cn
-  - DOMAIN-SUFFIX,tlivemcdnsched.cn
-  - DOMAIN-SUFFIX,tliveproxy.cn
-  - DOMAIN-SUFFIX,tliveproxy2.cn
-  - DOMAIN-SUFFIX,tlivepush.cn
-  - DOMAIN-SUFFIX,tlivepush.com.cn
-  - DOMAIN-SUFFIX,tlivertc.cn
-  - DOMAIN-SUFFIX,tlivertc2.cn
-  - DOMAIN-SUFFIX,tlivesdk.cn
-  - DOMAIN-SUFFIX,tlivesdk2.cn
-  - DOMAIN-SUFFIX,tlivesdkconfig.cn
-  - DOMAIN-SUFFIX,tlivesdkconfig2.cn
-  - DOMAIN-SUFFIX,tlivesrc.cn
-  - DOMAIN-SUFFIX,tlivesrc2.cn
-  - DOMAIN-SUFFIX,tlivesrcaccess.cn
-  - DOMAIN-SUFFIX,tlivesrcaccess2.cn
-  - DOMAIN-SUFFIX,tlivesrcapp.cn
-  - DOMAIN-SUFFIX,tlivesrcapp2.cn
-  - DOMAIN-SUFFIX,tlivesrcschedule.cn
-  - DOMAIN-SUFFIX,tlivesrcschedule2.cn
-  - DOMAIN-SUFFIX,tlivessl.cn
-  - DOMAIN-SUFFIX,tlivessl2.cn
-  - DOMAIN-SUFFIX,tlivestream.cn
-  - DOMAIN-SUFFIX,tlivestream2.cn
-  - DOMAIN-SUFFIX,tliveupload.cn
-  - DOMAIN-SUFFIX,tliveupload2.cn
-  - DOMAIN-SUFFIX,tliveweb.cn
-  - DOMAIN-SUFFIX,tliveweb2.cn
-  - DOMAIN-SUFFIX,tlivewebrtc.cn
-  - DOMAIN-SUFFIX,tlivewebrtc2.cn
-  - DOMAIN-SUFFIX,tlivewebrtcpush.cn
-  - DOMAIN-SUFFIX,tlivewebrtcpush2.cn
-  - DOMAIN-SUFFIX,tlivewebrtcpushsch.cn
-  - DOMAIN-SUFFIX,tlivewebrtcpushsch2.cn
   - DOMAIN-SUFFIX,tln.srfms.com
-  - DOMAIN-SUFFIX,tmcdl.cn
-  - DOMAIN-SUFFIX,tmcqd.cn
-  - DOMAIN-SUFFIX,tmcyx.cn
-  - DOMAIN-SUFFIX,tmgdb.cn
-  - DOMAIN-SUFFIX,tmgdb.com.cn
   - DOMAIN-SUFFIX,tmpstream.hyrtv.cn
   - DOMAIN-SUFFIX,tna5.bozztv.com
-  - DOMAIN-SUFFIX,tnebula.cn
   - DOMAIN-SUFFIX,tnv.bonus-tv.ru
   - DOMAIN-SUFFIX,topfi.ios.internapcdn.net
   - DOMAIN-SUFFIX,topwin-tv.my.id
   - DOMAIN-SUFFIX,toronto3.live247stream.com
-  - DOMAIN-SUFFIX,tos.cn
   - DOMAIN-SUFFIX,tospotify.com
-  - DOMAIN-SUFFIX,tourismshow.cn
-  - DOMAIN-SUFFIX,tourismuser.cn
-  - DOMAIN-SUFFIX,tqapp.cn
   - DOMAIN-SUFFIX,tr.socialsmart.tv
   - DOMAIN-SUFFIX,trae.ai
-  - DOMAIN-SUFFIX,tri.cn
-  - DOMAIN-SUFFIX,trimg.cn
   - DOMAIN-SUFFIX,trk555.tv
-  - DOMAIN-SUFFIX,trtcube-license.cn
   - DOMAIN-SUFFIX,trwamtv.live.e55-po.insyscd.net
   - DOMAIN-SUFFIX,trwamtv.live.e57-po.insyscd.net
   - DOMAIN-SUFFIX,trwamtv.live.e59-po.insyscd.net
   - DOMAIN-SUFFIX,ts2000tv.streaming.nextware.it
-  - DOMAIN-SUFFIX,tsasc.cn
-  - DOMAIN-SUFFIX,tsd0.cn
-  - DOMAIN-SUFFIX,tsm0.cn
-  - DOMAIN-SUFFIX,tsn0.cn
   - DOMAIN-SUFFIX,tstv-stream.tsm.utexas.edu
   - DOMAIN-SUFFIX,tsw.streamingwebtv24.it
-  - DOMAIN-SUFFIX,tts0.cn
-  - DOMAIN-SUFFIX,ttsim.cn
+  - DOMAIN-SUFFIX,ttadsmanager.com
+  - DOMAIN-SUFFIX,ttapis.com
+  - DOMAIN-SUFFIX,ttdns2.com
+  - DOMAIN-SUFFIX,ttlivecdn.com
+  - DOMAIN-SUFFIX,ttoversea.net
+  - DOMAIN-SUFFIX,ttoverseaus.net
   - DOMAIN-SUFFIX,ttvnw.net
+  - DOMAIN-SUFFIX,ttwstatic.com
   - DOMAIN-SUFFIX,turkmedya-live.ercdn.net
   - DOMAIN-SUFFIX,tv-topshop.netrack.ru
   - DOMAIN-SUFFIX,tv.apple.com
@@ -4986,47 +4394,27 @@ payload:
   - DOMAIN-SUFFIX,twitchcdn.net
   - DOMAIN-SUFFIX,twitchsvc.net
   - DOMAIN-SUFFIX,two.alfajertv.com
-  - DOMAIN-SUFFIX,txclivecdn.cn
-  - DOMAIN-SUFFIX,txcloudlive.cn
-  - DOMAIN-SUFFIX,txelive.cn
-  - DOMAIN-SUFFIX,txelvb.cn
-  - DOMAIN-SUFFIX,txhttpdns.cn
-  - DOMAIN-SUFFIX,txlivecdn.cn
-  - DOMAIN-SUFFIX,txmdb.cn
-  - DOMAIN-SUFFIX,txmdb.com.cn
-  - DOMAIN-SUFFIX,tym0.cn
-  - DOMAIN-SUFFIX,tyn0.cn
   - DOMAIN-SUFFIX,tynt.com
   - DOMAIN-SUFFIX,tyt-xumo-us.amagi.tv
-  - DOMAIN-SUFFIX,tyu0.cn
+  - DOMAIN-SUFFIX,tzvbfs.com
   - DOMAIN-SUFFIX,ucankus-live.cdnnew.com
-  - DOMAIN-SUFFIX,ugcimg.cn
   - DOMAIN-SUFFIX,uiptv.do.am
-  - DOMAIN-SUFFIX,uisa0.cn
   - DOMAIN-SUFFIX,uk4.streamingpulse.com
   - DOMAIN-SUFFIX,uksono1-samsunguk.amagi.tv
   - DOMAIN-SUFFIX,umbriatv.stream.rubidia.it
   - DOMAIN-SUFFIX,unbeaten-roku.amagi.tv
-  - DOMAIN-SUFFIX,uncnn.cn
   - DOMAIN-SUFFIX,unitvaovivo.ufrgs.br
   - DOMAIN-SUFFIX,universalkids.com
-  - DOMAIN-SUFFIX,univod.cn
   - DOMAIN-SUFFIX,unlimited1-cl-movistar.dps.live
   - DOMAIN-SUFFIX,unlimited1-us.dps.live
   - DOMAIN-SUFFIX,unlimited2-cl-movistar.dps.live
   - DOMAIN-SUFFIX,unlimited6-cl.dps.live
   - DOMAIN-SUFFIX,uplynk.com
   - DOMAIN-SUFFIX,urduvoa.com
-  - DOMAIN-SUFFIX,url.cn
-  - DOMAIN-SUFFIX,urldx.cn
-  - DOMAIN-SUFFIX,urlget.cn
-  - DOMAIN-SUFFIX,urlshare.cn
   - DOMAIN-SUFFIX,us-west-2.amazonaws.com
   - DOMAIN-SUFFIX,us.bestvideostreaming.is
   - DOMAIN-SUFFIX,us200.streamkit.tv
   - DOMAIN-SUFFIX,usanetwork.com
-  - DOMAIN-SUFFIX,usao5.cn
-  - DOMAIN-SUFFIX,usao8.cn
   - DOMAIN-SUFFIX,usb.bozztv.com
   - DOMAIN-SUFFIX,usgeowall.sinclairstoryline.com
   - DOMAIN-SUFFIX,uskudarunv.mediatriple.net
@@ -5087,7 +4475,6 @@ payload:
   - DOMAIN-SUFFIX,videostream.shockmedia.com.ar
   - DOMAIN-SUFFIX,vidnetcdn.vidgyor.com
   - DOMAIN-SUFFIX,vidol.tv
-  - DOMAIN-SUFFIX,vigtm-meeting-tencent.cn
   - DOMAIN-SUFFIX,viki.com
   - DOMAIN-SUFFIX,viki.io
   - DOMAIN-SUFFIX,viki.net
@@ -5102,8 +4489,6 @@ payload:
   - DOMAIN-SUFFIX,vimeoondemand.com
   - DOMAIN-SUFFIX,vimeostatus.com
   - DOMAIN-SUFFIX,vip2.liveanywhere.asia
-  - DOMAIN-SUFFIX,visvice.com.cn
-  - DOMAIN-SUFFIX,visvise.com.cn
   - DOMAIN-SUFFIX,vitor-tvclassics-1.plex.wurl.com
   - DOMAIN-SUFFIX,viu.com
   - DOMAIN-SUFFIX,viu.tv
@@ -5156,7 +4541,6 @@ payload:
   - DOMAIN-SUFFIX,vs8.live.opencaster.com
   - DOMAIN-SUFFIX,vsn1-cdn-phx.icastcenter.com
   - DOMAIN-SUFFIX,vstream3.hadara.ps
-  - DOMAIN-SUFFIX,vurl1.cn
   - DOMAIN-SUFFIX,w1.mediastreaming.it
   - DOMAIN-SUFFIX,w1.streamingmedia.it
   - DOMAIN-SUFFIX,w10.streamgb.com
@@ -5164,6 +4548,7 @@ payload:
   - DOMAIN-SUFFIX,w3.013.gostreaming.tv
   - DOMAIN-SUFFIX,w4.mostvideo.tv
   - DOMAIN-SUFFIX,wanzhoulive.cbg.cn
+  - DOMAIN-SUFFIX,warnermediacdn.com
   - DOMAIN-SUFFIX,watch.haitilive.net
   - DOMAIN-SUFFIX,watchdisneyfe.com
   - DOMAIN-SUFFIX,watcher-node5.apsny.camera
@@ -5171,7 +4556,6 @@ payload:
   - DOMAIN-SUFFIX,watchnebula.com
   - DOMAIN-SUFFIX,waw1.artiyerelmedya.net
   - DOMAIN-SUFFIX,waw2.artiyerelmedya.net
-  - DOMAIN-SUFFIX,we-park.cn
   - DOMAIN-SUFFIX,wearelive.livebox.co.in
   - DOMAIN-SUFFIX,weathernationtv.samsung.wurl.com
   - DOMAIN-SUFFIX,web.onair-radio.eu
@@ -5179,14 +4563,6 @@ payload:
   - DOMAIN-SUFFIX,webmobile.xdev.ro
   - DOMAIN-SUFFIX,webtvmonacoinfo.mc
   - DOMAIN-SUFFIX,webtvstream.bhtelecom.ba
-  - DOMAIN-SUFFIX,wechatlegal.cn
-  - DOMAIN-SUFFIX,wechatpay.cn
-  - DOMAIN-SUFFIX,wegame.com.cn
-  - DOMAIN-SUFFIX,weparks.cn
-  - DOMAIN-SUFFIX,werepository.com.cn
-  - DOMAIN-SUFFIX,wesingapp.cn
-  - DOMAIN-SUFFIX,wetest.cn
-  - DOMAIN-SUFFIX,wetestlab.cn
   - DOMAIN-SUFFIX,wfc.bonus-tv.ru
   - DOMAIN-SUFFIX,wfcint.mediacdn.ru
   - DOMAIN-SUFFIX,whatthefox.com
@@ -5200,10 +4576,8 @@ payload:
   - DOMAIN-SUFFIX,win4.yayin.com.tr
   - DOMAIN-SUFFIX,win8.yayin.com.tr
   - DOMAIN-SUFFIX,winticket.jp
-  - DOMAIN-SUFFIX,wisefx.cn
   - DOMAIN-SUFFIX,withyoutube.com
   - DOMAIN-SUFFIX,wlngstudiowebcam.srfms.com
-  - DOMAIN-SUFFIX,wltong.cn
   - DOMAIN-SUFFIX,wma10.fluidstream.net
   - DOMAIN-SUFFIX,wms.brtk.net
   - DOMAIN-SUFFIX,wms.shared.streamshow.it
@@ -5224,9 +4598,7 @@ payload:
   - DOMAIN-SUFFIX,wowzastream.westmancom.com
   - DOMAIN-SUFFIX,wpc.d1627.nucdn.net
   - DOMAIN-SUFFIX,wpso.com
-  - DOMAIN-SUFFIX,wqsnx.org.cn
   - DOMAIN-SUFFIX,wslb.dobratv.net
-  - DOMAIN-SUFFIX,wujicode.cn
   - DOMAIN-SUFFIX,www.10kanal.ru
   - DOMAIN-SUFFIX,www.336699.live
   - DOMAIN-SUFFIX,www.coninfo.net
@@ -5250,18 +4622,10 @@ payload:
   - DOMAIN-SUFFIX,www.trimi.com.ar
   - DOMAIN-SUFFIX,www.uniqueradio.jp
   - DOMAIN-SUFFIX,wwwhuluplus.com
-  - DOMAIN-SUFFIX,wxaurl.cn
-  - DOMAIN-SUFFIX,wxmpurl.cn
-  - DOMAIN-SUFFIX,wxpayglobal.cn
-  - DOMAIN-SUFFIX,wxscan.cn
   - DOMAIN-SUFFIX,wz3.dnip.com.br
   - DOMAIN-SUFFIX,wzstreaming.rai.it
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,xapp510394368c1000199.f.l.z.lb.core-cdn.net
-  - DOMAIN-SUFFIX,xga0.cn
-  - DOMAIN-SUFFIX,xgz0.cn
-  - DOMAIN-SUFFIX,xgz1.cn
-  - DOMAIN-SUFFIX,xgz2.cn
   - DOMAIN-SUFFIX,xhalive.qwmedia.cn
   - DOMAIN-SUFFIX,xite-samsung-de.amagi.tv
   - DOMAIN-SUFFIX,xlbor3aadvaj-hls-live.wmncdn.net
@@ -5270,23 +4634,13 @@ payload:
   - DOMAIN-SUFFIX,xn--fiq53l6wcx3kp9bc7joo6apn8a.cn
   - DOMAIN-SUFFIX,xn--fiq53l90et9fpncc7joo6apn8a.cn
   - DOMAIN-SUFFIX,xn--kprv4ewxfr9cpxcc7joo6apn8a.cn
-  - DOMAIN-SUFFIX,xqa1.cn
-  - DOMAIN-SUFFIX,xqd1.cn
-  - DOMAIN-SUFFIX,xqg1.cn
-  - DOMAIN-SUFFIX,xqk1.cn
-  - DOMAIN-SUFFIX,xqz0.cn
-  - DOMAIN-SUFFIX,xs.cn
-  - DOMAIN-SUFFIX,xs8.cn
   - DOMAIN-SUFFIX,xumo-redbox.ott-channels.stingray.com
-  - DOMAIN-SUFFIX,xuz0.cn
   - DOMAIN-SUFFIX,yahoofinance-localnow.amagi.tv
-  - DOMAIN-SUFFIX,yayagushi.cn
   - DOMAIN-SUFFIX,yayin.marmaratv.com.tr
   - DOMAIN-SUFFIX,yayin.netradyom.com
   - DOMAIN-SUFFIX,yayin3.canlitv.com
   - DOMAIN-SUFFIX,yb.uncn.jp
   - DOMAIN-SUFFIX,yerelmedya.tv
-  - DOMAIN-SUFFIX,yidiancun.cn
   - DOMAIN-SUFFIX,yjh3p.stream.miraclechannel.com
   - DOMAIN-SUFFIX,youboranqs01.com
   - DOMAIN-SUFFIX,youtu.be
@@ -5460,12 +4814,7 @@ payload:
   - DOMAIN-SUFFIX,yt.be
   - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,ytnmmd.mmdlive.lldns.net
-  - DOMAIN-SUFFIX,yufuid.com.cn
-  - DOMAIN-SUFFIX,yuntus.cn
-  - DOMAIN-SUFFIX,yuntus.com.cn
   - DOMAIN-SUFFIX,yurgan.bonus-tv.ru
-  - DOMAIN-SUFFIX,ywurl.cn
-  - DOMAIN-SUFFIX,yximg.cn
   - DOMAIN-SUFFIX,z5.app
   - DOMAIN-SUFFIX,z5.com
   - DOMAIN-SUFFIX,zabava-htlive.cdn.ngenix.net
@@ -5477,22 +4826,12 @@ payload:
   - DOMAIN-SUFFIX,zeetv.co.uk
   - DOMAIN-SUFFIX,zeetv.com
   - DOMAIN-SUFFIX,zeeuk.com
-  - DOMAIN-SUFFIX,zenvideo.cn
   - DOMAIN-SUFFIX,zeriamerikes.com
   - DOMAIN-SUFFIX,zggbdszt.cn
   - DOMAIN-SUFFIX,zggbdszt.com.cn
   - DOMAIN-SUFFIX,zggbdszt.net.cn
-  - DOMAIN-SUFFIX,zhixinliancos.cn
-  - DOMAIN-SUFFIX,zhjmp.cn
-  - DOMAIN-SUFFIX,zhn0.cn
-  - DOMAIN-SUFFIX,zhuoyuegame.cn
-  - DOMAIN-SUFFIX,zjdwz.cn
-  - DOMAIN-SUFFIX,zjump.cn
   - DOMAIN-SUFFIX,zm6gdaxeyn93-hls-live.5centscdn.com
   - DOMAIN-SUFFIX,zoomoo-samsungau.amagi.tv
-  - DOMAIN-SUFFIX,ztcv1.cn
-  - DOMAIN-SUFFIX,ztcv2.cn
-  - DOMAIN-SUFFIX,ztcv3.cn
   - DOMAIN-SUFFIX,zuzenean.goienamedia.eus
   - DOMAIN-SUFFIX,zygbdszt.net.cn
   - DOMAIN-SUFFIX,zype.com
@@ -10844,3 +10183,24 @@ payload:
   - IP-CIDR6,::ffff:60.171.183.186/128,no-resolve
   - IP-CIDR6,::ffff:60.171.183.98/128
   - IP-CIDR6,::ffff:60.171.183.98/128,no-resolve
+  - PROCESS-NAME,com.bilibili.app.blue
+  - PROCESS-NAME,com.bilibili.app.in
+  - PROCESS-NAME,com.bilibili.comic
+  - PROCESS-NAME,com.bilibili.comic.intl
+  - PROCESS-NAME,com.bstar.intl
+  - PROCESS-NAME,com.cbs.app
+  - PROCESS-NAME,com.disney.datg.videoplatforms.android.abc
+  - PROCESS-NAME,com.disney.disneyplus
+  - PROCESS-NAME,com.hbo.hbonow
+  - PROCESS-NAME,com.hulu.plus
+  - PROCESS-NAME,com.mb.android
+  - PROCESS-NAME,com.netflix.mediaclient
+  - PROCESS-NAME,com.qiyi.video
+  - PROCESS-NAME,com.showtime.standalone
+  - PROCESS-NAME,com.spotify.music
+  - PROCESS-NAME,com.viu.pad
+  - PROCESS-NAME,com.viu.phone
+  - PROCESS-NAME,com.vuclip.viu
+  - PROCESS-NAME,com.zhiliaoapp.musically
+  - PROCESS-NAME,tv.danmaku.bili
+  - PROCESS-NAME,tv.danmaku.bilibilihd
