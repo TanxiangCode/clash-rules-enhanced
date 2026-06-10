@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 262759 条
+# 📊 融合纯净总条目: 262757 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -52187,7 +52187,6 @@ payload:
   - DOMAIN-SUFFIX,- '+.infomorning.com'
   - DOMAIN-SUFFIX,- '+.infong.net'
   - DOMAIN-SUFFIX,- '+.infoobs.com'
-  - DOMAIN-SUFFIX,- '+.infoq.com'
   - DOMAIN-SUFFIX,- '+.infoqstatic.com'
   - DOMAIN-SUFFIX,- '+.inforbus.com'
   - DOMAIN-SUFFIX,- '+.inforeenviro.com'
@@ -52518,7 +52517,6 @@ payload:
   - DOMAIN-SUFFIX,- '+.iouluo.com'
   - DOMAIN-SUFFIX,- '+.ioxqm.com'
   - DOMAIN-SUFFIX,- '+.ioxunyun.com'
-  - DOMAIN-SUFFIX,- '+.ip-cdn.com'
   - DOMAIN-SUFFIX,- '+.ip-guard.net'
   - DOMAIN-SUFFIX,- '+.ip-hercules.com'
   - DOMAIN-SUFFIX,- '+.ip-soc.com'
