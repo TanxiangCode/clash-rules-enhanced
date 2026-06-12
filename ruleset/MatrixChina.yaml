@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 262808 条
+# 📊 融合纯净总条目: 262809 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -3935,6 +3935,7 @@ payload:
   - DOMAIN-SUFFIX,- '+.264006.com'
   - DOMAIN-SUFFIX,- '+.264321.com'
   - DOMAIN-SUFFIX,- '+.264400.com'
+  - DOMAIN-SUFFIX,- '+.265.com'
   - DOMAIN-SUFFIX,- '+.26582.vip'
   - DOMAIN-SUFFIX,- '+.26595.com'
   - DOMAIN-SUFFIX,- '+.265g.com'
@@ -113122,7 +113123,6 @@ payload:
   - DOMAIN-SUFFIX,- '+.zzzyyy.com'
   - DOMAIN-SUFFIX,- '+.zzzzaaaa.com'
   - DOMAIN-SUFFIX,- '+.zzzzzz.me'
-  - DOMAIN-SUFFIX,- '265.com'
   - DOMAIN-SUFFIX,- '2mdn-cn.net'
   - DOMAIN-SUFFIX,- '2mdn.net'
   - DOMAIN-SUFFIX,- 'a1.mzstatic.com'
@@ -113676,6 +113676,7 @@ payload:
   - DOMAIN-SUFFIX,- 'www.gstatic.com'
   - DOMAIN-SUFFIX,- 'www.microsoft.com'
   - DOMAIN-SUFFIX,- 'www.pxcc.com'
+  - DOMAIN-SUFFIX,- 'www.recaptcha-cn.net'
   - DOMAIN-SUFFIX,- 'www.recaptcha.net'
   - DOMAIN-SUFFIX,- 'www.support.apple.com'
   - DOMAIN-SUFFIX,- 'www4-static.gog-statics.com'
