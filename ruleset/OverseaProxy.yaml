@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 8044 条
+# 📊 融合纯净总条目: 8048 条
 # ===================================================
 payload:
   - DOMAIN,api.mixpanel.com
@@ -218,6 +218,7 @@ payload:
   - DOMAIN-SUFFIX,acast.com
   - DOMAIN-SUFFIX,accessfacebookfromschool.com
   - DOMAIN-SUFFIX,accim.org
+  - DOMAIN-SUFFIX,accountboy.com
   - DOMAIN-SUFFIX,accountkit.com
   - DOMAIN-SUFFIX,acebooik.com
   - DOMAIN-SUFFIX,acebook.com
@@ -4513,6 +4514,7 @@ payload:
   - DOMAIN-SUFFIX,monocloud.me
   - DOMAIN-SUFFIX,monster.com
   - DOMAIN-SUFFIX,moodyz.com
+  - DOMAIN-SUFFIX,moomoo.com
   - DOMAIN-SUFFIX,moon.fm
   - DOMAIN-SUFFIX,moonbbs.com
   - DOMAIN-SUFFIX,moonbbs.info
@@ -5957,6 +5959,7 @@ payload:
   - DOMAIN-SUFFIX,sinonet.ca
   - DOMAIN-SUFFIX,sinopitt.info
   - DOMAIN-SUFFIX,sinoquebec.com
+  - DOMAIN-SUFFIX,sinyalee.com
   - DOMAIN-SUFFIX,sipml5.org
   - DOMAIN-SUFFIX,sis.xxx
   - DOMAIN-SUFFIX,sis001.com
@@ -7586,6 +7589,7 @@ payload:
   - DOMAIN-SUFFIX,xn--oiq.cc
   - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c
   - DOMAIN-SUFFIX,xn--u2u927b.com
+  - DOMAIN-SUFFIX,xn--vuqv2cf7wzyig79c.com
   - DOMAIN-SUFFIX,xnpool.com
   - DOMAIN-SUFFIX,xnxx-cdn.com
   - DOMAIN-SUFFIX,xnxx.com
