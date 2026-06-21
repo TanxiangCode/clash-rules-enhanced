@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 680 条
+# 📊 融合纯净总条目: 682 条
 # ===================================================
 payload:
   - DOMAIN,blizzard.nefficient.co.kr
@@ -161,6 +161,8 @@ payload:
   - DOMAIN-SUFFIX,ginzasonypark.jp
   - DOMAIN-SUFFIX,giratina.com
   - DOMAIN-SUFFIX,gloryofheracles.com
+  - DOMAIN-SUFFIX,gog-statics.com
+  - DOMAIN-SUFFIX,gog.com
   - DOMAIN-SUFFIX,hackyourconsole.com
   - DOMAIN-SUFFIX,helpshift.com
   - DOMAIN-SUFFIX,heroesofdragonage.com
