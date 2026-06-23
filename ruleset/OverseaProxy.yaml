@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 8106 条
+# 📊 融合纯净总条目: 8107 条
 # ===================================================
 payload:
   - DOMAIN,api.mixpanel.com
@@ -7450,6 +7450,7 @@ payload:
   - DOMAIN-SUFFIX,windowslive.cn
   - DOMAIN-SUFFIX,windowsmarketplace.com
   - DOMAIN-SUFFIX,windowsphone-int.com
+  - DOMAIN-SUFFIX,windowsphone.com
   - DOMAIN-SUFFIX,windowsphoneme.com
   - DOMAIN-SUFFIX,windscribe.com
   - DOMAIN-SUFFIX,wingamestore.com
