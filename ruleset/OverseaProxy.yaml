@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 8107 条
+# 📊 融合纯净总条目: 8108 条
 # ===================================================
 payload:
   - DOMAIN,api.mixpanel.com
@@ -2800,6 +2800,7 @@ payload:
   - DOMAIN-SUFFIX,geph.io
   - DOMAIN-SUFFIX,gerefoundation.org
   - DOMAIN-SUFFIX,get.app
+  - DOMAIN-SUFFIX,get.dappcdn.com
   - DOMAIN-SUFFIX,get.dev
   - DOMAIN-SUFFIX,get.how
   - DOMAIN-SUFFIX,get.page
