@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 261560 条
+# 📊 融合纯净总条目: 261564 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -112502,6 +112502,7 @@ payload:
   - DOMAIN-SUFFIX,- 'a3.mzstatic.com'
   - DOMAIN-SUFFIX,- 'a4.mzstatic.com'
   - DOMAIN-SUFFIX,- 'a5.mzstatic.com'
+  - DOMAIN-SUFFIX,- 'account-cn.alibabacloud.com'
   - DOMAIN-SUFFIX,- 'activate.activation-v2.kaspersky.com'
   - DOMAIN-SUFFIX,- 'activation-v2.geo.kaspersky.com'
   - DOMAIN-SUFFIX,- 'activation-v2.kaspersky.com'
@@ -112524,6 +112525,7 @@ payload:
   - DOMAIN-SUFFIX,- 'aod-ssl.itunes.apple.com'
   - DOMAIN-SUFFIX,- 'aod.itunes.apple.com'
   - DOMAIN-SUFFIX,- 'api-edge.apps.apple.com'
+  - DOMAIN-SUFFIX,- 'api.alibabacloud.com'
   - DOMAIN-SUFFIX,- 'app-analytics-services.com'
   - DOMAIN-SUFFIX,- 'app-measurement-cn.com'
   - DOMAIN-SUFFIX,- 'app-measurement.com'
@@ -112597,6 +112599,7 @@ payload:
   - DOMAIN-SUFFIX,- 'clientservices.googleapis.com'
   - DOMAIN-SUFFIX,- 'cma.itunes.apple.com'
   - DOMAIN-SUFFIX,- 'cn-smp-paymentservices.apple.com'
+  - DOMAIN-SUFFIX,- 'cn.alibabacloud.com'
   - DOMAIN-SUFFIX,- 'cn.download.nvidia.com'
   - DOMAIN-SUFFIX,- 'cn.widevine.com'
   - DOMAIN-SUFFIX,- 'cn.windowssearch.com'
@@ -112990,6 +112993,7 @@ payload:
   - DOMAIN-SUFFIX,- 'staging.databe.floonet.goog'
   - DOMAIN-SUFFIX,- 'static.gc.apple.com'
   - DOMAIN-SUFFIX,- 'statics.teams.cdn.office.net'
+  - DOMAIN-SUFFIX,- 'status.alibabacloud.com'
   - DOMAIN-SUFFIX,- 'stocks-sparkline-lb.apple.com.akadns.net'
   - DOMAIN-SUFFIX,- 'stocks-sparkline.apple.com'
   - DOMAIN-SUFFIX,- 'store.apple.com'
