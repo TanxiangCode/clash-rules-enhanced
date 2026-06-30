@@ -1,6 +1,6 @@
 # ===================================================
-# 🛡️ clash-rules-enhanced 多源聚合极速版 (Moli-X 融合)
-# 📊 融合纯净总条目: 89 条
+# 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
+# 📊 精简条目: 91 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
@@ -14,12 +14,14 @@ payload:
   - DOMAIN,api.jetbrains.ai
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,cdn.usefathom.com
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,daily-cloudcode-pa.googleapis.com
   - DOMAIN,gateway.ai.cloudflare.com
   - DOMAIN,jules.google.com
   - DOMAIN,makersuite.google.com
   - DOMAIN,openai-api.arkoselabs.com
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
   - DOMAIN,openrouter.ai
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,robinfrontend-pa.googleapis.com
