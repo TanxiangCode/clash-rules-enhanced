@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 32647 条
+# 📊 精简条目: 32648 条
 # ===================================================
 payload:
   - DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
@@ -18493,7 +18493,6 @@ payload:
   - IP-CIDR,150.248.0.0/16,no-resolve
   - IP-CIDR,150.255.0.0/16,no-resolve
   - IP-CIDR,151.243.189.0/24,no-resolve
-  - IP-CIDR,151.244.135.0/24,no-resolve
   - IP-CIDR,151.246.184.0/24,no-resolve
   - IP-CIDR,151.247.148.0/23,no-resolve
   - IP-CIDR,151.249.90.0/23,no-resolve
@@ -19760,6 +19759,7 @@ payload:
   - IP-CIDR,192.55.46.0/24,no-resolve
   - IP-CIDR,192.55.68.0/22,no-resolve
   - IP-CIDR,192.56.99.0/24,no-resolve
+  - IP-CIDR,192.6.121.0/24,no-resolve
   - IP-CIDR,192.6.161.0/24,no-resolve
   - IP-CIDR,192.6.243.0/24,no-resolve
   - IP-CIDR,193.112.0.0/16,no-resolve
@@ -21313,6 +21313,7 @@ payload:
   - IP-CIDR,203.205.254.0/23
   - IP-CIDR,203.205.254.0/24,no-resolve
   - IP-CIDR,203.205.64.0/19,no-resolve
+  - IP-CIDR,203.205.88.0/22,no-resolve
   - IP-CIDR,203.205.88.0/23,no-resolve
   - IP-CIDR,203.205.88.0/24,no-resolve
   - IP-CIDR,203.205.90.0/24,no-resolve
