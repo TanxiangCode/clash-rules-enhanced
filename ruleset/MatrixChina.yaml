@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 32664 条
+# 📊 精简条目: 32665 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -1784,6 +1784,7 @@ payload:
   - DOMAIN-SUFFIX,caixinonline.com
   - DOMAIN-SUFFIX,caiyu.com
   - DOMAIN-SUFFIX,caiyunapp.com
+  - DOMAIN-SUFFIX,caiyuncdn.com
   - DOMAIN-SUFFIX,calatopia.com
   - DOMAIN-SUFFIX,calorietech.com
   - DOMAIN-SUFFIX,camera360.com
