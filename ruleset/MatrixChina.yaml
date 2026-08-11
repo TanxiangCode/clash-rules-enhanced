@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 32668 条
+# 📊 精简条目: 32680 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -3206,6 +3206,7 @@ payload:
   - DOMAIN-SUFFIX,fspcdn.com
   - DOMAIN-SUFFIX,fsphere.cn
   - DOMAIN-SUFFIX,ftcwifi.com
+  - DOMAIN-SUFFIX,ftfast.com
   - DOMAIN-SUFFIX,fu81q.cn
   - DOMAIN-SUFFIX,fullluckcalendar.com
   - DOMAIN-SUFFIX,fun.tv
@@ -4124,6 +4125,8 @@ payload:
   - DOMAIN-SUFFIX,ionecloud.cn
   - DOMAIN-SUFFIX,iopiopl.com
   - DOMAIN-SUFFIX,iot-tencent.com
+  - DOMAIN-SUFFIX,iotaskyt.com
+  - DOMAIN-SUFFIX,iotaskyty.com
   - DOMAIN-SUFFIX,iotboss.cn
   - DOMAIN-SUFFIX,iotmrvr.com
   - DOMAIN-SUFFIX,ip138.com
@@ -4176,6 +4179,8 @@ payload:
   - DOMAIN-SUFFIX,ithome.com
   - DOMAIN-SUFFIX,ithome.net
   - DOMAIN-SUFFIX,itiger.com
+  - DOMAIN-SUFFIX,itigergrowtha.com
+  - DOMAIN-SUFFIX,itigerup.com
   - DOMAIN-SUFFIX,itocoo.cn
   - DOMAIN-SUFFIX,itopplay.com
   - DOMAIN-SUFFIX,itopsdk.com
@@ -5778,6 +5783,7 @@ payload:
   - DOMAIN-SUFFIX,pinyin.cn
   - DOMAIN-SUFFIX,pipix.com
   - DOMAIN-SUFFIX,pitayaio.com
+  - DOMAIN-SUFFIX,play-analytics.com
   - DOMAIN-SUFFIX,playbattleaces.com
   - DOMAIN-SUFFIX,playcvn.com
   - DOMAIN-SUFFIX,playdisorder.com
@@ -6613,6 +6619,7 @@ payload:
   - DOMAIN-SUFFIX,skspace.cn
   - DOMAIN-SUFFIX,sktcdn.com
   - DOMAIN-SUFFIX,skysea.com
+  - DOMAIN-SUFFIX,skytigris.cn
   - DOMAIN-SUFFIX,slja2.com
   - DOMAIN-SUFFIX,sm.cn
   - DOMAIN-SUFFIX,smapi.cn
@@ -6923,6 +6930,7 @@ payload:
   - DOMAIN-SUFFIX,tbapp.com
   - DOMAIN-SUFFIX,tbcache.com
   - DOMAIN-SUFFIX,tbcdn.cn
+  - DOMAIN-SUFFIX,tbdesk.com
   - DOMAIN-SUFFIX,tbizmail.com
   - DOMAIN-SUFFIX,tburl.in
   - DOMAIN-SUFFIX,tc471cyhud.com
@@ -7600,7 +7608,10 @@ payload:
   - DOMAIN-SUFFIX,tieyou.com
   - DOMAIN-SUFFIX,tigerbbs.cn
   - DOMAIN-SUFFIX,tigerbbs.com
+  - DOMAIN-SUFFIX,tigerbrokers.net
   - DOMAIN-SUFFIX,tigerfintech.com
+  - DOMAIN-SUFFIX,tigertcp.cn
+  - DOMAIN-SUFFIX,tigr.link
   - DOMAIN-SUFFIX,timatrix.com.cn
   - DOMAIN-SUFFIX,timedl.com
   - DOMAIN-SUFFIX,timibase.com
@@ -9605,6 +9616,7 @@ payload:
   - IP-CIDR,101.124.0.0/20,no-resolve
   - IP-CIDR,101.124.19.0/24,no-resolve
   - IP-CIDR,101.124.22.0/24,no-resolve
+  - IP-CIDR,101.124.24.0/21,no-resolve
   - IP-CIDR,101.124.62.0/24,no-resolve
   - IP-CIDR,101.125.0.0/22,no-resolve
   - IP-CIDR,101.125.130.0/24,no-resolve
@@ -17924,7 +17936,6 @@ payload:
   - IP-CIDR,125.208.42.0/24,no-resolve
   - IP-CIDR,125.208.45.0/24,no-resolve
   - IP-CIDR,125.208.46.0/23,no-resolve
-  - IP-CIDR,125.208.46.0/24,no-resolve
   - IP-CIDR,125.208.48.0/20,no-resolve
   - IP-CIDR,125.208.49.0/24,no-resolve
   - IP-CIDR,125.210.0.0/15,no-resolve
@@ -22938,6 +22949,7 @@ payload:
   - IP-CIDR,218.96.244.0/24,no-resolve
   - IP-CIDR,218.96.255.0/24,no-resolve
   - IP-CIDR,218.96.64.0/22,no-resolve
+  - IP-CIDR,218.96.70.0/23,no-resolve
   - IP-CIDR,218.97.0.0/17,no-resolve
   - IP-CIDR,218.97.0.0/19,no-resolve
   - IP-CIDR,218.97.128.0/17,no-resolve
