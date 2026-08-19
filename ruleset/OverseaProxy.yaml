@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 1445 条
+# 📊 精简条目: 1468 条
 # ===================================================
 payload:
   - DOMAIN,api.mixpanel.com
@@ -37,9 +37,11 @@ payload:
   - DOMAIN-KEYWORD,youtube
   - DOMAIN-SUFFIX,1drv.com
   - DOMAIN-SUFFIX,1drv.ms
+  - DOMAIN-SUFFIX,1e100.net
   - DOMAIN-SUFFIX,21vbc.com
   - DOMAIN-SUFFIX,21vbluecloud.com
   - DOMAIN-SUFFIX,21vbluecloud.net
+  - DOMAIN-SUFFIX,2mdn.net
   - DOMAIN-SUFFIX,a-msedge.net
   - DOMAIN-SUFFIX,a1158.g.akamai.net
   - DOMAIN-SUFFIX,a122.dscg3.akamai.net
@@ -67,6 +69,7 @@ payload:
   - DOMAIN-SUFFIX,api-extractor.com
   - DOMAIN-SUFFIX,apihub-internal.cn
   - DOMAIN-SUFFIX,apisof.net
+  - DOMAIN-SUFFIX,app-measurement.net
   - DOMAIN-SUFFIX,appcenter.ms
   - DOMAIN-SUFFIX,applicationinsights.io
   - DOMAIN-SUFFIX,applicationinsights.net
@@ -201,6 +204,7 @@ payload:
   - DOMAIN-SUFFIX,buyingfacebooklikes.com
   - DOMAIN-SUFFIX,buyoculus.com
   - DOMAIN-SUFFIX,c-msedge.net
+  - DOMAIN-SUFFIX,c.gle
   - DOMAIN-SUFFIX,callersbane.com
   - DOMAIN-SUFFIX,careersatfb.com
   - DOMAIN-SUFFIX,carstagram.com
@@ -610,6 +614,7 @@ payload:
   - DOMAIN-SUFFIX,funnyfacebook.org
   - DOMAIN-SUFFIX,futureofbusinesssurvey.org
   - DOMAIN-SUFFIX,g.akamaiedge.net
+  - DOMAIN-SUFFIX,g.co
   - DOMAIN-SUFFIX,gacebook.com
   - DOMAIN-SUFFIX,gamepass.com
   - DOMAIN-SUFFIX,gameroom.com
@@ -621,6 +626,7 @@ payload:
   - DOMAIN-SUFFIX,getmicrosoftkey.com
   - DOMAIN-SUFFIX,gfacecbook.com
   - DOMAIN-SUFFIX,gfx.ms
+  - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,ghcr.io
   - DOMAIN-SUFFIX,gigjam.com
   - DOMAIN-SUFFIX,git.io
@@ -645,11 +651,20 @@ payload:
   - DOMAIN-SUFFIX,gitlab.net
   - DOMAIN-SUFFIX,gitter-static.net
   - DOMAIN-SUFFIX,gitter.im
+  - DOMAIN-SUFFIX,goo.gl
+  - DOMAIN-SUFFIX,googleapis.cn
+  - DOMAIN-SUFFIX,googleapis.com
   - DOMAIN-SUFFIX,gotcosmos.com
   - DOMAIN-SUFFIX,graph.org
   - DOMAIN-SUFFIX,graphengine.io
   - DOMAIN-SUFFIX,groupme.com
   - DOMAIN-SUFFIX,groups.com
+  - DOMAIN-SUFFIX,gstatic.cn
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,gvt0.com
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,gvt3.com
   - DOMAIN-SUFFIX,hackerfacebook.com
   - DOMAIN-SUFFIX,hackfacebook.com
   - DOMAIN-SUFFIX,hackfacebookid.com
@@ -1299,9 +1314,15 @@ payload:
   - DOMAIN-SUFFIX,xboxservices.com
   - DOMAIN-SUFFIX,xboxstudios.com
   - DOMAIN-SUFFIX,xbx.lv
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,yammer.com
   - DOMAIN-SUFFIX,yammerusercontent.com
   - DOMAIN-SUFFIX,yogalayout.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,yt.be
+  - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,zuckerberg.com
   - DOMAIN-SUFFIX,zuckerberg.net
   - IP-ASN,211157,no-resolve
@@ -1359,6 +1380,7 @@ payload:
   - IP-CIDR,173.192.222.160/27
   - IP-CIDR,173.192.231.32/27
   - IP-CIDR,173.194.0.0/16
+  - IP-CIDR,173.194.0.0/16,no-resolve
   - IP-CIDR,173.252.64.0/18
   - IP-CIDR,173.252.64.0/18,no-resolve
   - IP-CIDR,174.142.105.153/32
@@ -1426,6 +1448,7 @@ payload:
   - IP-CIDR,72.52.81.22/32
   - IP-CIDR,74.119.76.0/22
   - IP-CIDR,74.125.0.0/16
+  - IP-CIDR,74.125.0.0/16,no-resolve
   - IP-CIDR,74.86.0.0/16
   - IP-CIDR,75.126.0.0/16
   - IP-CIDR,91.105.192.0/23

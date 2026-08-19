@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 3457 条
+# 📊 精简条目: 3472 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -1096,6 +1096,7 @@ payload:
   - DOMAIN-SUFFIX,bbcmedia.co.uk
   - DOMAIN-SUFFIX,bbcpersian.com
   - DOMAIN-SUFFIX,bbcverticals.com
+  - DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net
   - DOMAIN-SUFFIX,beautyandthebeastmusical.co.uk
   - DOMAIN-SUFFIX,bidi.net.uk
   - DOMAIN-SUFFIX,bigbigchannel.com.hk
@@ -1173,6 +1174,7 @@ payload:
   - DOMAIN-SUFFIX,cctvpro.com.cn
   - DOMAIN-SUFFIX,cdn.optimizely.com
   - DOMAIN-SUFFIX,cdn.zampdsp.com
+  - DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
   - DOMAIN-SUFFIX,cf1.jmsooo.com
   - DOMAIN-SUFFIX,channel4.com
   - DOMAIN-SUFFIX,chinaepg.cn
@@ -1347,11 +1349,13 @@ payload:
   - DOMAIN-SUFFIX,espncdn.com
   - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
   - DOMAIN-SUFFIX,espnqa.com
+  - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,fantv.hk
   - DOMAIN-SUFFIX,fast.com
   - DOMAIN-SUFFIX,findyourlimits.com
   - DOMAIN-SUFFIX,flxvpn.net
+  - DOMAIN-SUFFIX,forthethrone.com
   - DOMAIN-SUFFIX,fox.com
   - DOMAIN-SUFFIX,foxdcg.com
   - DOMAIN-SUFFIX,foxplus.com
@@ -1377,12 +1381,17 @@ payload:
   - DOMAIN-SUFFIX,hayabusa.dev
   - DOMAIN-SUFFIX,hayabusa.io
   - DOMAIN-SUFFIX,hayabusa.media
+  - DOMAIN-SUFFIX,hbo.com
+  - DOMAIN-SUFFIX,hbo.com.c.footprint.net
+  - DOMAIN-SUFFIX,hbo.com.edgesuite.net
+  - DOMAIN-SUFFIX,hbo.map.fastly.net
   - DOMAIN-SUFFIX,hboasia.com
   - DOMAIN-SUFFIX,hboasia1-i.akamaihd.net
   - DOMAIN-SUFFIX,hboasia2-i.akamaihd.net
   - DOMAIN-SUFFIX,hboasia3-i.akamaihd.net
   - DOMAIN-SUFFIX,hboasia4-i.akamaihd.net
   - DOMAIN-SUFFIX,hboasia5-i.akamaihd.net
+  - DOMAIN-SUFFIX,hbogeo.cust.footprint.net
   - DOMAIN-SUFFIX,hbogo.co.th
   - DOMAIN-SUFFIX,hbogo.com
   - DOMAIN-SUFFIX,hbogo.eu
@@ -1392,10 +1401,12 @@ payload:
   - DOMAIN-SUFFIX,hbogoasia.ph
   - DOMAIN-SUFFIX,hbogoasia.sg
   - DOMAIN-SUFFIX,hbogoasia.tw
+  - DOMAIN-SUFFIX,hbolb.onwardsmg.com
   - DOMAIN-SUFFIX,hbomax.com
   - DOMAIN-SUFFIX,hbomaxcdn.com
   - DOMAIN-SUFFIX,hbomaxdash.s.llnwi.net
   - DOMAIN-SUFFIX,hbonow.com
+  - DOMAIN-SUFFIX,hbounify-prod.evergent.com
   - DOMAIN-SUFFIX,hdslb.com.w.kunlunhuf.com
   - DOMAIN-SUFFIX,hdslb.com.w.kunlunpi.com
   - DOMAIN-SUFFIX,hdslb.net
@@ -1471,6 +1482,7 @@ payload:
   - DOMAIN-SUFFIX,kmplayer.com
   - DOMAIN-SUFFIX,line.emby.men
   - DOMAIN-SUFFIX,litix.io
+  - DOMAIN-SUFFIX,manifest.prod.boltdns.net
   - DOMAIN-SUFFIX,maoercdn.com
   - DOMAIN-SUFFIX,marscode.com
   - DOMAIN-SUFFIX,marvel.com
@@ -1542,6 +1554,7 @@ payload:
   - DOMAIN-SUFFIX,nomadlandmovie.ch
   - DOMAIN-SUFFIX,now-ashare.com
   - DOMAIN-SUFFIX,now-tv.com
+  - DOMAIN-SUFFIX,now.com
   - DOMAIN-SUFFIX,now.com.hk
   - DOMAIN-SUFFIX,nowe.com
   - DOMAIN-SUFFIX,nowe.hk
@@ -1560,6 +1573,7 @@ payload:
   - DOMAIN-SUFFIX,peachmv.me
   - DOMAIN-SUFFIX,peacocktv.com
   - DOMAIN-SUFFIX,pilipiliultra.com
+  - DOMAIN-SUFFIX,players.brightcove.net
   - DOMAIN-SUFFIX,playmation.com
   - DOMAIN-SUFFIX,plusmedia.site
   - DOMAIN-SUFFIX,pluto.tv
@@ -1679,6 +1693,7 @@ payload:
   - DOMAIN-SUFFIX,video.google.com
   - DOMAIN-SUFFIX,videojj.com
   - DOMAIN-SUFFIX,videos-f.jwpsrv.com
+  - DOMAIN-SUFFIX,warnermediacdn.com
   - DOMAIN-SUFFIX,watchdisneyfe.com
   - DOMAIN-SUFFIX,watchespn.com
   - DOMAIN-SUFFIX,wide-youtube.l.google.com
