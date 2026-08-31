@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 33018 条
+# 📊 精简条目: 33019 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -22389,6 +22389,7 @@ payload:
   - IP-CIDR,205.198.19.0/24,no-resolve
   - IP-CIDR,205.204.96.0/19
   - IP-CIDR,205.252.239.0/24,no-resolve
+  - IP-CIDR,206.109.70.0/23,no-resolve
   - IP-CIDR,206.109.75.0/24,no-resolve
   - IP-CIDR,206.232.68.0/22,no-resolve
   - IP-CIDR,206.232.72.0/22,no-resolve
