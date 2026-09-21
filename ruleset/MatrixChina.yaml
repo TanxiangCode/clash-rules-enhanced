@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 33071 条
+# 📊 精简条目: 33075 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -2203,6 +2203,7 @@ payload:
   - DOMAIN-SUFFIX,cmdcl.cn
   - DOMAIN-SUFFIX,cmdcxls.com
   - DOMAIN-SUFFIX,cmdev.cn
+  - DOMAIN-SUFFIX,cmecloud.cn
   - DOMAIN-SUFFIX,cmedia360.com
   - DOMAIN-SUFFIX,cmf.biz
   - DOMAIN-SUFFIX,cmf.ltd
@@ -2901,6 +2902,7 @@ payload:
   - DOMAIN-SUFFIX,econtactsplus.com
   - DOMAIN-SUFFIX,ecp-cloud.com
   - DOMAIN-SUFFIX,ecp-cloud.net
+  - DOMAIN-SUFFIX,ecpan.cn
   - DOMAIN-SUFFIX,ectencent.cn
   - DOMAIN-SUFFIX,ectencent.com
   - DOMAIN-SUFFIX,ectencent.com.cn
@@ -21614,6 +21616,7 @@ payload:
   - IP-CIDR,203.205.88.0/22,no-resolve
   - IP-CIDR,203.205.88.0/24,no-resolve
   - IP-CIDR,203.205.92.0/23,no-resolve
+  - IP-CIDR,203.205.94.0/24,no-resolve
   - IP-CIDR,203.207.104.0/22,no-resolve
   - IP-CIDR,203.207.112.0/20,no-resolve
   - IP-CIDR,203.207.128.0/17,no-resolve
@@ -27267,6 +27270,7 @@ payload:
   - IP-CIDR,64.235.227.160/29,no-resolve
   - IP-CIDR,64.235.230.152/30,no-resolve
   - IP-CIDR,64.71.138.0/25,no-resolve
+  - IP-CIDR,64.96.5.0/24,no-resolve
   - IP-CIDR,65.111.0.0/19,no-resolve
   - IP-CIDR,65.55.60.184/30,no-resolve
   - IP-CIDR,65.97.55.248/29,no-resolve
