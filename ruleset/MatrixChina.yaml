@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 33076 条
+# 📊 精简条目: 33078 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -962,7 +962,7 @@ payload:
   - DOMAIN-SUFFIX,9uma.cn
   - DOMAIN-SUFFIX,9xiu.com
   - DOMAIN-SUFFIX,9xsecndns.cn
-  - DOMAIN-SUFFIX,DOMAIN-WILDCARD,*.qhimgs?.com
+  - DOMAIN-SUFFIX,DOMAIN-WILDCARD,qhimgs?.com
   - DOMAIN-SUFFIX,USER-AGENT,%E4%BC%98%E9%85%B7*
   - DOMAIN-SUFFIX,USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
   - DOMAIN-SUFFIX,USER-AGENT,MicroMessenger*
@@ -15637,6 +15637,7 @@ payload:
   - IP-CIDR,113.46.0.0/16,no-resolve
   - IP-CIDR,113.47.0.0/18,no-resolve
   - IP-CIDR,113.47.104.0/22,no-resolve
+  - IP-CIDR,113.47.108.0/23,no-resolve
   - IP-CIDR,113.47.110.0/24,no-resolve
   - IP-CIDR,113.47.112.0/20,no-resolve
   - IP-CIDR,113.47.128.0/18,no-resolve
@@ -16026,6 +16027,7 @@ payload:
   - IP-CIDR,115.32.0.0/14,no-resolve
   - IP-CIDR,115.32.0.0/19,no-resolve
   - IP-CIDR,115.32.104.0/21,no-resolve
+  - IP-CIDR,115.32.112.0/22,no-resolve
   - IP-CIDR,115.32.120.0/21,no-resolve
   - IP-CIDR,115.32.128.0/19,no-resolve
   - IP-CIDR,115.32.32.0/20,no-resolve
@@ -18124,6 +18126,7 @@ payload:
   - IP-CIDR,124.71.192.0/19,no-resolve
   - IP-CIDR,124.71.224.0/20,no-resolve
   - IP-CIDR,124.71.240.0/21,no-resolve
+  - IP-CIDR,124.71.244.0/23,no-resolve
   - IP-CIDR,124.71.248.0/23,no-resolve
   - IP-CIDR,124.71.250.0/23,no-resolve
   - IP-CIDR,124.71.250.0/24,no-resolve
@@ -18473,7 +18476,6 @@ payload:
   - IP-CIDR,14.22.33.0/24,no-resolve
   - IP-CIDR,14.22.4.0/24,no-resolve
   - IP-CIDR,14.22.5.0/24,no-resolve
-  - IP-CIDR,14.238.34.0/24,no-resolve
   - IP-CIDR,14.241.232.0/21,no-resolve
   - IP-CIDR,14.255.16.0/24,no-resolve
   - IP-CIDR,14.255.238.0/24,no-resolve
