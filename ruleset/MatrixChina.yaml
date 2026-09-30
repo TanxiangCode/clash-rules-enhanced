@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 29118 条
+# 📊 精简条目: 29119 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -68,6 +68,7 @@ payload:
   - DOMAIN,tieba-ares.cdn.bcebos.com
   - DOMAIN,tiebac.baidu.com
   - DOMAIN,tiebapic.baidu.com
+  - DOMAIN,time.xtracloud.net
   - DOMAIN,upos-hz-mirrorakam.akamaized.net
   - DOMAIN,url.cn
   - DOMAIN,viayoo.com
