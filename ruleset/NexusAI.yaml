@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 93 条
+# 📊 精简条目: 94 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
@@ -44,6 +44,7 @@ payload:
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,chatgpt.livekit.cloud
   - DOMAIN-SUFFIX,chatgpt.site
+  - DOMAIN-SUFFIX,clau.de
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,client-api.arkoselabs.com
