@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 94 条
+# 📊 精简条目: 97 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
@@ -17,6 +17,7 @@ payload:
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,daily-cloudcode-pa.googleapis.com
   - DOMAIN,gateway.ai.cloudflare.com
+  - DOMAIN,inference.codeium.com
   - DOMAIN,jules.google.com
   - DOMAIN,makersuite.google.com
   - DOMAIN,openai-api.arkoselabs.com
@@ -26,6 +27,8 @@ payload:
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,robinfrontend-pa.googleapis.com
   - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,server.codeium.com
+  - DOMAIN,server.self-serve.windsurf.com
   - DOMAIN,static.cloudflareinsights.com
   - DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
   - DOMAIN-KEYWORD,colab
