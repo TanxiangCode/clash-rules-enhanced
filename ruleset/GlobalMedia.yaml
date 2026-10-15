@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 3472 条
+# 📊 精简条目: 3475 条
 # ===================================================
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
@@ -1144,6 +1144,9 @@ payload:
   - DOMAIN-SUFFIX,cakeapp.me
   - DOMAIN-SUFFIX,callhulu.com
   - DOMAIN-SUFFIX,capcut.com
+  - DOMAIN-SUFFIX,capcutapi.com
+  - DOMAIN-SUFFIX,capcutapi.us
+  - DOMAIN-SUFFIX,capcutstatic.com
   - DOMAIN-SUFFIX,cbs.com
   - DOMAIN-SUFFIX,cbsaavideo.com
   - DOMAIN-SUFFIX,cbscorporation.com
