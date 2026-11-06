@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 29539 条
+# 📊 精简条目: 29540 条
 # ===================================================
 payload:
   - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -2618,6 +2618,7 @@ payload:
   - DOMAIN-SUFFIX,discuz.com
   - DOMAIN-SUFFIX,discuz.net
   - DOMAIN-SUFFIX,discuz.org
+  - DOMAIN-SUFFIX,dittocdn.com
   - DOMAIN-SUFFIX,diyiyt.com
   - DOMAIN-SUFFIX,diyring.cc
   - DOMAIN-SUFFIX,dizzylab.net
