@@ -1,9 +1,10 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 97 条
+# 📊 精简条目: 100 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
+  - DOMAIN,aicode.googleapis.com
   - DOMAIN,aida.googleapis.com
   - DOMAIN,aisandbox-pa.googleapis.com
   - DOMAIN,alkalicore-pa.clients6.google.com
@@ -15,7 +16,9 @@ payload:
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,cdn.usefathom.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,cloud.zed.dev
   - DOMAIN,daily-cloudcode-pa.googleapis.com
+  - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
   - DOMAIN,gateway.ai.cloudflare.com
   - DOMAIN,inference.codeium.com
   - DOMAIN,jules.google.com
