@@ -1,6 +1,6 @@
 # ===================================================
 # 🛡️ clash-rules-enhanced 暴瘦极速版 (L1 专属补丁)
-# 📊 精简条目: 102 条
+# 📊 精简条目: 101 条
 # ===================================================
 payload:
   - DOMAIN,ai.google.dev
@@ -22,7 +22,6 @@ payload:
   - DOMAIN,daily-cloudcode-pa.googleapis.com
   - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
   - DOMAIN,gateway.ai.cloudflare.com
-  - DOMAIN,inference.codeium.com
   - DOMAIN,jules.google.com
   - DOMAIN,makersuite.google.com
   - DOMAIN,openai-api.arkoselabs.com
